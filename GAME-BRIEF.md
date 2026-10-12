@@ -2,9 +2,9 @@
 
 Player promise: keep an ordinary night diner open while deciding whom to trust. Time pressure comes from service and paid inspections; horror comes from evidence and the cost of a mistaken decision.
 
-Runtime: pinned Phaser 3.90.0 Canvas, buildless browser modules and DOM controls. Simulation is owned by Diner in dist/sim.js. Phaser only adapts the state into artwork, animation and camera effects. DOM controls call the same action methods tested by the suite.
+Runtime: pinned Phaser 3.90.0 (WebGL with Canvas fallback), buildless browser modules and DOM controls. Simulation is owned by Diner in dist/sim.js. Phaser only adapts the state into artwork, animation and camera effects. DOM controls call the same action methods tested by the suite.
 
-Primary loop: arrive/queue → order → cook → inspect → serve/refuse → eat/pay/linger → close → rent/loan/Lantern result → upgrades → next night. Week success occurs after night seven with Lanterns remaining and fewer than two weekly rent loans. Endless advances indefinitely with escalating rent and weekly loan reset.
+Primary loop: night conditions card → arrive/queue → order → cook → inspect → serve/refuse → eat/pay/linger → close → star rating, rent/loan/Lantern result → upgrades → next night. Week success occurs after night seven with Lanterns remaining and fewer than two weekly rent loans. Endless advances indefinitely with escalating rent and weekly loan reset.
 
 Persistence: versioned progress and current-shift snapshot; parse/schema guards reject invalid saves; menu settings preserve a prior run. Background-tab and pause/settings views suspend simulation. Reading the guide costs live service time.
 
@@ -15,3 +15,5 @@ Audio: local original organ music, dread drone and foley with optional captions.
 Input: pointer/touch plus keyboard aliases. Portrait layout reflows the inspector below the scene, keeps all table/counter targets in DOM and exposes sticky final service controls. Flicker/grain are off by default, with motion, contrast, subtitle and patience assists.
 
 Evidence: automated simulation/static/offline tests and actual DOM button progression with a stubbed renderer. Managed browser QA is unavailable. Full browser/device rendering and performance are explicitly unverified.
+
+Depth (2.0): per-night conditions with explicit trade-offs, a service streak that scales tips and breaks on mistakes, three-star night ratings, rush warnings, and an evidence board whose deductions use only observed tells and completed checks — never hidden state. Lifetime records and achievements live in a separate profile key so they never invalidate a run save.

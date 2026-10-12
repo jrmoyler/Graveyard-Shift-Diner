@@ -3,14 +3,19 @@
   "scope": "DOM/controller integration with stubbed Phaser renderer",
   "checks": [
     "Boot and start menu",
-    "Take order, cook and serve through actual DOM buttons",
+    "Night intro card pauses the clock",
+    "Take order, cook and serve through keyboard and DOM buttons",
+    "Service streak",
     "Four-second evidence reveals",
-    "Two-clue refusal",
+    "Evidence board: suspicious then confirmed",
+    "Two-clue refusal by keyboard",
     "Pause/save/menu checkpoint",
     "Menu settings preserve save",
-    "Continue resumes gameplay",
-    "Receipt survives Escape",
-    "Next night starts"
+    "Escape closes settings from a focused control",
+    "Continue resumes paused",
+    "Receipt with star rating survives Escape",
+    "Next night starts with new conditions",
+    "Profile stats persist"
   ],
   "browser_rendering_verified": false,
   "physical_mobile_verified": false

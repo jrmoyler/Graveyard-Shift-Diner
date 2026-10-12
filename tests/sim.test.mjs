@@ -1,36 +1,334 @@
-import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';
-import {Diner,SHIFT_SECONDS} from '../dist/sim.js';
-const root=new URL('../dist/assets/data/',import.meta.url);
-const get=n=>JSON.parse(fs.readFileSync(new URL(n+'.json',root)));
-const content={creatures:get('creatures'),regulars:get('regulars'),recipes:get('recipes'),tells:get('tells'),actions:get('inspection-actions'),dialogue:get('dialogue-180'),humanTalk:get('human-small-talk')};
-function game(n=1){const g=new Diner(content);g.progress.night=n;g.startNight();return g;}
-function advance(g,t){for(let elapsed=0;elapsed<t;elapsed+=1)g.tick(Math.min(1,t-elapsed));}
-function guest(g,{creature=false,type='hollow-driver',tells=['cold-coffee','no-reflection'],seat=1,price=18,patience=60}={}){
- const c={id:9999,creature,type:creature?type:null,tells:creature?tells:[],art:creature?type:'mechanic',regularId:null,recipeId:'breakfast',price,cookSeconds:22,patience,known:[],state:'ordering',seat,served:false,payment:false,tip:0};g.s.customers.push(c);return c;
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import { Diner, SHIFT_SECONDS } from '../dist/sim.js';
+const root = new URL('../dist/assets/data/', import.meta.url);
+const get = n => JSON.parse(fs.readFileSync(new URL(n + '.json', root)));
+const content = {
+  creatures: get('creatures'),
+  regulars: get('regulars'),
+  recipes: get('recipes'),
+  tells: get('tells'),
+  actions: get('inspection-actions'),
+  dialogue: get('dialogue-180'),
+  humanTalk: get('human-small-talk')
+};
+function game(n = 1) {
+  const g = new Diner(content);
+  g.progress.night = n;
+  g.startNight();
+  return g;
 }
-test('night one contains exactly 16 customers and deterministic tutorial sequence',()=>{const a=game(),b=game();assert.equal(a.s.customers.length+a.s.plan.length,16);assert.equal(a.getCustomer(101).art,'earl');assert.equal(a.s.plan[0].id,102);assert.equal(a.s.plan[0].creature,true);assert.deepEqual(a.s.plan,b.s.plan);});
-test('all six creature kinds carry exactly two tells from distinct categories',()=>{for(let n=1;n<=12;n++){const g=game(n);for(const c of [...g.s.customers,...g.s.plan])if(c.creature){assert.equal(c.tells.length,2);assert.notEqual(content.tells.find(t=>t.id===c.tells[0]).action,content.tells.find(t=>t.id===c.tells[1]).action);}else assert(c.tells.length<=1);}});
-test('wrong refusal subtracts full value and exactly eight reputation',()=>{const g=game(),c=guest(g);assert.equal(g.refuse(c.id),true);assert.equal(g.progress.cash,102);assert.equal(g.progress.reputation,52);assert.equal(g.s.summary.lostSales,18);assert.equal(g.refuse(c.id),false);});
-test('correct refusal decays dread and regular witness grants two reputation',()=>{const g=game(),c=guest(g,{creature:true});g.s.dread=25;g.refuse(c.id);assert.equal(g.s.dread,15);assert.equal(g.progress.cash,120);assert.equal(g.progress.reputation,62);});
-test('inspection takes four actual simulation seconds and blocks other service',()=>{const g=game(),c=guest(g,{creature:true});g.inspect(c.id,'coffee');assert.deepEqual(c.known,[]);assert.equal(g.order(101),false);advance(g,3);assert.deepEqual(c.known,[]);advance(g,1);assert.deepEqual(c.known,['cold-coffee']);assert.equal(g.busy,false);assert(c.patience<60);assert.equal(g.order(101),true);});
-test('inspection reveals only requested category',()=>{const g=game(),c=guest(g,{creature:true});g.inspect(c.id,'hands');advance(g,4);assert.deepEqual(c.known,[]);g.inspect(c.id,'reflection');advance(g,4);assert.deepEqual(c.known,['no-reflection']);});
-test('regular exceptions are logged after observation',()=>{const g=game();g.inspect(101,'salt');advance(g,4);assert.deepEqual(g.progress.exceptions.earl,['refuses-salt']);});
-test('four burners cannot accept a fifth concurrent job',()=>{const g=game();const cs=Array.from({length:5},()=>guest(g));cs.forEach((c,i)=>c.id=1000+i);for(const c of cs){g.order(c.id);g.cook(c.id);}assert.equal(g.s.jobs.length,4);assert.equal(g.cook(cs[0].id),false);});
-test('dread multiplier is bounded at 2.0 and hired cook reduces 25%',()=>{const g=game(),c=guest(g);g.s.dread=100;g.order(c.id);g.cook(c.id);assert.equal(g.s.jobs[0].duration,44);const h=game(),d=guest(h);h.progress.upgrades.push('cook');h.s.dread=100;h.order(d.id);h.cook(d.id);assert.equal(h.s.jobs[0].duration,33);});
-test('no serving until the kitchen completes the dish',()=>{const g=game(),c=guest(g);g.order(c.id);g.cook(c.id);assert.equal(g.serve(c.id),false);advance(g,22);assert.equal(c.ready,true);assert.equal(g.serve(c.id),true);assert.equal(c.state,'eating');assert.equal(g.refuse(c.id),false);});
-test('tips use patience and reputation at serving, paid once after twenty seconds',()=>{const g=game(),c=guest(g,{patience:45,price:12});g.order(c.id);c.ready=true;const before=g.progress.cash;g.serve(c.id);const tip=12*(45/60)*.6*.3;advance(g,19);assert.equal(c.payment,false);advance(g,1);assert.equal(c.payment,true);assert(Math.abs(g.progress.cash-(before+12+tip))<1e-9);g.pay(c);assert(Math.abs(g.progress.cash-(before+12+tip))<1e-9);});
-test('serving creature adds 15 Dread and costs one Lantern at close',()=>{const g=game(),c=guest(g,{creature:true});g.order(c.id);c.ready=true;g.serve(c.id);assert.equal(g.s.dread,15);advance(g,20);assert.equal(c.state,'lingering');g.close();assert.equal(g.progress.lanterns,2);});
-test('each served creature takes a Lantern and three cause darkness',()=>{const g=game();for(let i=0;i<3;i++){const c=guest(g,{creature:true});c.id+=i;g.order(c.id);c.ready=true;g.serve(c.id);}g.close();assert.equal(g.progress.lanterns,0);assert.equal(g.s.phase,'dark');});
-test('second rent loan fires player',()=>{const g=game();g.progress.cash=0;g.close();assert.equal(g.progress.loans,1);assert.equal(g.progress.reputation,50);g.nextNight();g.progress.cash=0;g.close();assert.equal(g.s.phase,'fired');assert.equal(g.progress.loans,2);});
-test('rent is 180 through night three, 200 on four and 260 on seven',()=>{for(const [n,rent] of [[1,180],[3,180],[4,200],[7,260]])assert.equal(game(n).rent,rent);const g=game(4);g.progress.mode='endless';assert.equal(g.rent,255);});
-test('upgrades can be bought only between shifts, once, with sufficient cash',()=>{const g=game();assert.equal(g.buy('bell'),false);g.progress.cash=500;g.close();assert.equal(g.buy('mirror'),true);assert.equal(g.progress.cash,170);assert.equal(g.buy('mirror'),false);assert.equal(g.buy('cook'),false);assert.equal(g.buy('invalid'),false);});
-test('mirror grants free reflection only at counter; salt grants free observation',()=>{const g=game();g.progress.upgrades.push('mirror','salt');const c=guest(g,{creature:true,tells:['no-reflection','cold-coffee'],seat:null});for(let i=1;i<6;i++)guest(g,{seat:i});g.seat(c);assert.equal(c.seat,6);assert(c.known.includes('no-reflection'));assert.equal(g.busy,false);});
-test('pause freezes customers, cooking and inspection',()=>{const g=game(),c=guest(g,{creature:true});g.inspect(c.id,'coffee');g.s.paused=true;advance(g,10);assert.equal(g.s.time,0);assert.equal(c.patience,60);assert.equal(g.s.inspection.remaining,4);});
-test('zero patience removes associated cooking job',()=>{const g=game(),c=guest(g,{patience:1});g.order(c.id);g.cook(c.id);advance(g,2);assert.equal(c.state,'gone');assert(!g.s.jobs.some(j=>j.customer===c.id));});
-test('assist mode slows patience by exactly a quarter',()=>{const g=game(),c=guest(g);g.settings.slowPatience=true;advance(g,4);assert.equal(c.patience,57);});
-test('save roundtrip preserves active jobs, tells, cash, settings and upgrades',()=>{const g=game(),c=guest(g,{creature:true});g.inspect(c.id,'coffee');advance(g,2);g.progress.upgrades.push('bell');g.settings.flickerOff=true;const h=new Diner(content);h.restore(JSON.parse(JSON.stringify(g.export())));assert.deepEqual(h.progress,g.progress);assert.equal(h.s.inspection.remaining,2);assert.equal(h.settings.flickerOff,true);assert.equal(h.s.paused,false);});
-test('malformed and future-version saves rejected',()=>{const g=game();assert.throws(()=>g.restore(null));assert.throws(()=>g.restore({version:99}));const s=g.export();s.progress.night=-1;assert.throws(()=>g.restore(s));});
-test('seventh night wins week with resources; endless can continue',()=>{const g=game(7);g.progress.cash=500;g.close();assert.equal(g.s.phase,'win');const h=game(7);h.progress.mode='endless';h.progress.cash=500;h.close();assert.equal(h.s.phase,'summary');assert.equal(h.nextNight(),true);assert.equal(h.progress.night,8);});
-test('night manager rush contains exactly three forced creatures in final group',()=>{const g=game(7);const cs=[...g.s.customers,...g.s.plan].filter(c=>c.id>=726);assert.equal(cs.length,3);assert(cs.every(c=>c.creature&&c.at>=450));});
-test('ten-minute clock closes automatically',()=>{const g=game();advance(g,SHIFT_SECONDS);assert.notEqual(g.s.phase,'shift');assert.equal(g.s.receipt.night,1);});
-test('a full human service completes the opening loop',()=>{const g=game();assert(g.order(101));assert(g.cook(101));advance(g,8);assert(g.serve(101));advance(g,20);assert.equal(g.getCustomer(101).state,'gone');assert(g.progress.cash>126);assert.equal(g.progress.stories.earl,1);});
+function advance(g, t) {
+  for (let elapsed = 0; elapsed < t; elapsed += 1) g.tick(Math.min(1, t - elapsed));
+}
+function guest(
+  g,
+  {
+    creature = false,
+    type = 'hollow-driver',
+    tells = ['cold-coffee', 'no-reflection'],
+    seat = 1,
+    price = 18,
+    patience = 60
+  } = {}
+) {
+  const c = {
+    id: 9999,
+    creature,
+    type: creature ? type : null,
+    tells: creature ? tells : [],
+    art: creature ? type : 'mechanic',
+    regularId: null,
+    recipeId: 'breakfast',
+    price,
+    cookSeconds: 22,
+    patience,
+    known: [],
+    state: 'ordering',
+    seat,
+    served: false,
+    payment: false,
+    tip: 0
+  };
+  g.s.customers.push(c);
+  return c;
+}
+test('night one contains exactly 16 customers and deterministic tutorial sequence', () => {
+  const a = game(),
+    b = game();
+  assert.equal(a.s.customers.length + a.s.plan.length, 16);
+  assert.equal(a.getCustomer(101).art, 'earl');
+  assert.equal(a.s.plan[0].id, 102);
+  assert.equal(a.s.plan[0].creature, true);
+  assert.deepEqual(a.s.plan, b.s.plan);
+});
+test('all six creature kinds carry exactly two tells from distinct categories', () => {
+  for (let n = 1; n <= 12; n++) {
+    const g = game(n);
+    for (const c of [...g.s.customers, ...g.s.plan])
+      if (c.creature) {
+        assert.equal(c.tells.length, 2);
+        assert.notEqual(
+          content.tells.find(t => t.id === c.tells[0]).action,
+          content.tells.find(t => t.id === c.tells[1]).action
+        );
+      } else assert(c.tells.length <= 1);
+  }
+});
+test('wrong refusal subtracts full value and exactly eight reputation', () => {
+  const g = game(),
+    c = guest(g);
+  assert.equal(g.refuse(c.id), true);
+  assert.equal(g.progress.cash, 102);
+  assert.equal(g.progress.reputation, 52);
+  assert.equal(g.s.summary.lostSales, 18);
+  assert.equal(g.refuse(c.id), false);
+});
+test('correct refusal decays dread and regular witness grants two reputation', () => {
+  const g = game(),
+    c = guest(g, { creature: true });
+  g.s.dread = 25;
+  g.refuse(c.id);
+  assert.equal(g.s.dread, 15);
+  assert.equal(g.progress.cash, 120);
+  assert.equal(g.progress.reputation, 62);
+});
+test('inspection takes four actual simulation seconds and blocks other service', () => {
+  const g = game(),
+    c = guest(g, { creature: true });
+  g.inspect(c.id, 'coffee');
+  assert.deepEqual(c.known, []);
+  assert.equal(g.order(101), false);
+  advance(g, 3);
+  assert.deepEqual(c.known, []);
+  advance(g, 1);
+  assert.deepEqual(c.known, ['cold-coffee']);
+  assert.equal(g.busy, false);
+  assert(c.patience < 60);
+  assert.equal(g.order(101), true);
+});
+test('inspection reveals only requested category', () => {
+  const g = game(),
+    c = guest(g, { creature: true });
+  g.inspect(c.id, 'hands');
+  advance(g, 4);
+  assert.deepEqual(c.known, []);
+  g.inspect(c.id, 'reflection');
+  advance(g, 4);
+  assert.deepEqual(c.known, ['no-reflection']);
+});
+test('regular exceptions are logged after observation', () => {
+  const g = game();
+  g.inspect(101, 'salt');
+  advance(g, 4);
+  assert.deepEqual(g.progress.exceptions.earl, ['refuses-salt']);
+});
+test('four burners cannot accept a fifth concurrent job', () => {
+  const g = game();
+  const cs = Array.from({ length: 5 }, () => guest(g));
+  cs.forEach((c, i) => (c.id = 1000 + i));
+  for (const c of cs) {
+    g.order(c.id);
+    g.cook(c.id);
+  }
+  assert.equal(g.s.jobs.length, 4);
+  assert.equal(g.cook(cs[0].id), false);
+});
+test('dread multiplier is bounded at 2.0 and hired cook reduces 25%', () => {
+  const g = game(),
+    c = guest(g);
+  g.s.dread = 100;
+  g.order(c.id);
+  g.cook(c.id);
+  assert.equal(g.s.jobs[0].duration, 44);
+  const h = game(),
+    d = guest(h);
+  h.progress.upgrades.push('cook');
+  h.s.dread = 100;
+  h.order(d.id);
+  h.cook(d.id);
+  assert.equal(h.s.jobs[0].duration, 33);
+});
+test('no serving until the kitchen completes the dish', () => {
+  const g = game(),
+    c = guest(g);
+  g.order(c.id);
+  g.cook(c.id);
+  assert.equal(g.serve(c.id), false);
+  advance(g, 22);
+  assert.equal(c.ready, true);
+  assert.equal(g.serve(c.id), true);
+  assert.equal(c.state, 'eating');
+  assert.equal(g.refuse(c.id), false);
+});
+test('tips use patience and reputation at serving, paid once after twenty seconds', () => {
+  const g = game(),
+    c = guest(g, { patience: 45, price: 12 });
+  g.order(c.id);
+  c.ready = true;
+  const before = g.progress.cash;
+  g.serve(c.id);
+  const tip = 12 * (45 / 60) * 0.6 * 0.3;
+  advance(g, 19);
+  assert.equal(c.payment, false);
+  advance(g, 1);
+  assert.equal(c.payment, true);
+  assert(Math.abs(g.progress.cash - (before + 12 + tip)) < 1e-9);
+  g.pay(c);
+  assert(Math.abs(g.progress.cash - (before + 12 + tip)) < 1e-9);
+});
+test('serving creature adds 15 Dread and costs one Lantern at close', () => {
+  const g = game(),
+    c = guest(g, { creature: true });
+  g.order(c.id);
+  c.ready = true;
+  g.serve(c.id);
+  assert.equal(g.s.dread, 15);
+  advance(g, 20);
+  assert.equal(c.state, 'lingering');
+  g.close();
+  assert.equal(g.progress.lanterns, 2);
+});
+test('each served creature takes a Lantern and three cause darkness', () => {
+  const g = game();
+  for (let i = 0; i < 3; i++) {
+    const c = guest(g, { creature: true });
+    c.id += i;
+    g.order(c.id);
+    c.ready = true;
+    g.serve(c.id);
+  }
+  g.close();
+  assert.equal(g.progress.lanterns, 0);
+  assert.equal(g.s.phase, 'dark');
+});
+test('second rent loan fires player', () => {
+  const g = game();
+  g.progress.cash = 0;
+  g.close();
+  assert.equal(g.progress.loans, 1);
+  assert.equal(g.progress.reputation, 50);
+  g.nextNight();
+  g.progress.cash = 0;
+  g.close();
+  assert.equal(g.s.phase, 'fired');
+  assert.equal(g.progress.loans, 2);
+});
+test('rent is 180 through night three, 200 on four and 260 on seven', () => {
+  for (const [n, rent] of [
+    [1, 180],
+    [3, 180],
+    [4, 200],
+    [7, 260]
+  ])
+    assert.equal(game(n).rent, rent);
+  const g = game(4);
+  g.progress.mode = 'endless';
+  assert.equal(g.rent, 255);
+});
+test('upgrades can be bought only between shifts, once, with sufficient cash', () => {
+  const g = game();
+  assert.equal(g.buy('bell'), false);
+  g.progress.cash = 500;
+  g.close();
+  assert.equal(g.buy('mirror'), true);
+  assert.equal(g.progress.cash, 170);
+  assert.equal(g.buy('mirror'), false);
+  assert.equal(g.buy('cook'), false);
+  assert.equal(g.buy('invalid'), false);
+});
+test('mirror grants free reflection only at counter; salt grants free observation', () => {
+  const g = game();
+  g.progress.upgrades.push('mirror', 'salt');
+  const c = guest(g, { creature: true, tells: ['no-reflection', 'cold-coffee'], seat: null });
+  for (let i = 1; i < 6; i++) guest(g, { seat: i });
+  g.seat(c);
+  assert.equal(c.seat, 6);
+  assert(c.known.includes('no-reflection'));
+  assert.equal(g.busy, false);
+});
+test('pause freezes customers, cooking and inspection', () => {
+  const g = game(),
+    c = guest(g, { creature: true });
+  g.inspect(c.id, 'coffee');
+  g.s.paused = true;
+  advance(g, 10);
+  assert.equal(g.s.time, 0);
+  assert.equal(c.patience, 60);
+  assert.equal(g.s.inspection.remaining, 4);
+});
+test('zero patience removes associated cooking job', () => {
+  const g = game(),
+    c = guest(g, { patience: 1 });
+  g.order(c.id);
+  g.cook(c.id);
+  advance(g, 2);
+  assert.equal(c.state, 'gone');
+  assert(!g.s.jobs.some(j => j.customer === c.id));
+});
+test('assist mode slows patience by exactly a quarter', () => {
+  const g = game(),
+    c = guest(g);
+  g.settings.slowPatience = true;
+  advance(g, 4);
+  assert.equal(c.patience, 57);
+});
+test('save roundtrip preserves active jobs, tells, cash, settings and upgrades', () => {
+  const g = game(),
+    c = guest(g, { creature: true });
+  g.inspect(c.id, 'coffee');
+  advance(g, 2);
+  g.progress.upgrades.push('bell');
+  g.settings.flickerOff = true;
+  const h = new Diner(content);
+  h.restore(JSON.parse(JSON.stringify(g.export())));
+  assert.deepEqual(h.progress, g.progress);
+  assert.equal(h.s.inspection.remaining, 2);
+  assert.equal(h.settings.flickerOff, true);
+  assert.equal(h.s.paused, false);
+});
+test('malformed and future-version saves rejected', () => {
+  const g = game();
+  assert.throws(() => g.restore(null));
+  assert.throws(() => g.restore({ version: 99 }));
+  const s = g.export();
+  s.progress.night = -1;
+  assert.throws(() => g.restore(s));
+});
+test('seventh night wins week with resources; endless can continue', () => {
+  const g = game(7);
+  g.progress.cash = 500;
+  g.close();
+  assert.equal(g.s.phase, 'win');
+  const h = game(7);
+  h.progress.mode = 'endless';
+  h.progress.cash = 500;
+  h.close();
+  assert.equal(h.s.phase, 'summary');
+  assert.equal(h.nextNight(), true);
+  assert.equal(h.progress.night, 8);
+});
+test('night manager rush contains exactly three forced creatures in final group', () => {
+  const g = game(7);
+  const cs = [...g.s.customers, ...g.s.plan].filter(c => c.id >= 726);
+  assert.equal(cs.length, 3);
+  assert(cs.every(c => c.creature && c.at >= 450));
+});
+test('ten-minute clock closes automatically', () => {
+  const g = game();
+  advance(g, SHIFT_SECONDS);
+  assert.notEqual(g.s.phase, 'shift');
+  assert.equal(g.s.receipt.night, 1);
+});
+test('a full human service completes the opening loop', () => {
+  const g = game();
+  assert(g.order(101));
+  assert(g.cook(101));
+  advance(g, 8);
+  assert(g.serve(101));
+  advance(g, 20);
+  assert.equal(g.getCustomer(101).state, 'gone');
+  assert(g.progress.cash > 126);
+  assert.equal(g.progress.stories.earl, 1);
+});
