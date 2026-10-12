@@ -1,8 +1,122 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#0E1418"><meta name="description" content="Pour the coffee, read the tells, and survive seven nights at the Graveyard Shift Diner."><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon-192.png"><link rel="stylesheet" href="style.css"><title>Graveyard Shift Diner</title></head><body>
-<div id="boot"><h1>Graveyard Shift<br>Diner</h1><p id="boot-label">Opening the diner…</p><progress id="boot-progress" value="0" max="1"></progress><p class="quiet">Hand-painted art. Original music. No jump scares.</p></div>
-<div id="title" hidden><div class="title-copy"><p class="eyebrow">MARROW FALLS · F033</p><h1>Graveyard Shift<br><span>Diner</span></h1><p>Pour the coffee. Read the tells.<br>Decide who leaves through the front door.</p><div id="menu-actions"></div><p class="quiet">One shift: 10 minutes · Seven nights to survive</p></div></div>
-<div id="game" hidden><header id="hud"><div><span class="eyebrow">CASH / RENT DUE</span><strong id="cash"></strong></div><div class="time"><span class="eyebrow" id="night"></span><strong id="clock"></strong></div><div><span class="eyebrow">REPUTATION</span><strong id="rep"></strong></div><div class="lanterns"><span class="eyebrow">LANTERNS</span><strong id="lanterns"></strong></div><button data-act="guide">Field guide</button><button data-act="pause" aria-label="Pause game">Ⅱ</button></header>
-<div class="game-layout"><main class="floor"><div id="world" aria-label="Diner playfield"></div><div class="floor-meta"><span id="dread"></span><span id="arrival-count"></span></div><div id="table-list" aria-label="Select a table or counter seat"></div><div id="tutorial" role="status"></div><div id="queue"></div></main><aside id="service" aria-label="Customer service"></aside></div><section class="kitchen"><div class="section-title"><h2>On the grill</h2><span id="kitchen-label"></span></div><div id="burners"></div></section><div id="caption" aria-live="polite"></div></div>
-<div id="overlay" hidden></div><div id="toast" role="status" hidden></div>
-<script src="phaser.min.js"></script><script type="module" src="app.js"></script>
-<noscript>This game requires JavaScript.</noscript></body></html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+    <meta name="theme-color" content="#0E1418" />
+    <meta
+      name="description"
+      content="Pour the coffee, read the tells, and survive seven nights at the Graveyard Shift Diner."
+    />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="icon-192.png" />
+    <link rel="apple-touch-icon" href="icon-192.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Graveyard Shift Diner</title>
+  </head>
+  <body>
+    <div id="boot">
+      <h1 class="neon">Graveyard Shift<br />Diner</h1>
+      <p id="boot-label">Opening the diner…</p>
+      <progress id="boot-progress" value="0" max="1"></progress>
+      <p class="quiet">Hand-painted art. Original music. No jump scares.</p>
+    </div>
+
+    <div id="title" hidden>
+      <div class="title-fog" aria-hidden="true"></div>
+      <div class="title-copy">
+        <p class="eyebrow">MARROW FALLS · ROUTE 9 · OPEN ALL NIGHT</p>
+        <h1 class="neon">Graveyard Shift<br /><span>Diner</span></h1>
+        <p>Pour the coffee. Read the tells.<br />Decide who leaves through the front door.</p>
+        <div id="menu-actions"></div>
+        <p class="quiet" id="menu-records">One shift: 10 minutes · Seven nights to survive</p>
+      </div>
+    </div>
+
+    <div id="game" hidden>
+      <header id="hud">
+        <div class="hud-stat cash">
+          <img src="assets/ui/icons/cash.svg" alt="" />
+          <div>
+            <span class="eyebrow">CASH / RENT DUE</span><strong id="cash"></strong>
+            <div class="meter" aria-hidden="true"><span id="rent-meter"></span></div>
+          </div>
+        </div>
+        <div class="hud-stat time">
+          <img src="assets/ui/icons/clock.svg" alt="" />
+          <div>
+            <span class="eyebrow" id="night"></span><strong id="clock"></strong>
+            <div class="meter" aria-hidden="true"><span id="shift-meter"></span></div>
+          </div>
+        </div>
+        <div class="hud-stat">
+          <img src="assets/ui/icons/reputation.svg" alt="" />
+          <div><span class="eyebrow">REPUTATION</span><strong id="rep"></strong></div>
+        </div>
+        <div class="hud-stat lanterns">
+          <div>
+            <span class="eyebrow">LANTERNS</span>
+            <strong id="lanterns" aria-live="polite"></strong>
+          </div>
+        </div>
+        <div class="hud-stat streak" id="streak-box">
+          <div><span class="eyebrow">SERVICE STREAK</span><strong id="streak"></strong></div>
+        </div>
+        <div class="hud-buttons">
+          <button data-act="guide" class="secondary" aria-keyshortcuts="G">
+            Field guide <kbd>G</kbd>
+          </button>
+          <button
+            data-act="pause"
+            class="icon-button"
+            aria-label="Pause game"
+            aria-keyshortcuts="Escape"
+          >
+            <img src="assets/ui/icons/pause.svg" alt="" />
+          </button>
+        </div>
+      </header>
+
+      <div class="game-layout">
+        <main class="floor">
+          <div id="stage">
+            <div id="world" aria-label="Diner playfield. Select a guest to serve them."></div>
+            <div id="dread-veil" aria-hidden="true"></div>
+            <div id="event-chip" aria-hidden="true"></div>
+            <div id="banner" role="status" hidden></div>
+            <div id="scan" hidden aria-hidden="true">
+              <span id="scan-label"></span>
+              <div class="meter"><span id="scan-meter"></span></div>
+            </div>
+          </div>
+          <div class="floor-meta">
+            <div class="dread">
+              <span id="dread"></span>
+              <div class="meter dread-meter" aria-hidden="true"><span id="dread-meter"></span></div>
+            </div>
+            <span id="arrival-count"></span>
+          </div>
+          <div id="table-list" aria-label="Select a table or counter seat"></div>
+          <div id="tutorial" role="status"></div>
+          <div id="queue"></div>
+        </main>
+        <aside id="service" aria-label="Customer service"></aside>
+      </div>
+
+      <section class="kitchen" aria-label="Kitchen">
+        <div class="section-title">
+          <h2>On the grill</h2>
+          <span id="kitchen-label"></span>
+        </div>
+        <div id="burners"></div>
+      </section>
+      <div id="caption" aria-live="polite"></div>
+    </div>
+
+    <div id="overlay" hidden></div>
+    <div id="toasts" role="status" aria-live="polite"></div>
+    <script src="phaser.min.js"></script>
+    <script type="module" src="app.js"></script>
+    <noscript>This game requires JavaScript.</noscript>
+  </body>
+</html>

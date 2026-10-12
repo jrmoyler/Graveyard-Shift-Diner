@@ -1,16 +1,15 @@
 {
   "status": "passed",
-  "automated_tests": 35,
-  "controller_checks": 9,
-  "engine": "Phaser 3.90.0 Canvas",
+  "automated_tests": 52,
+  "controller_checks": 14,
+  "engine": "Phaser 3.90.0 (WebGL with Canvas fallback)",
   "mode": "Seven-night week and Endless",
-  "offline_files": 104,
-  "browser_visual_qa": "Unavailable: managed preview requires a browser-control skill that is not installed. No substitute browser path was used.",
+  "offline_files": 114,
+  "browser_visual_qa": "Headless Chromium (Playwright, SwiftShader WebGL) screenshots of title, night intro, live shift, inspection zoom, evidence board, result/receipt, records and 390px mobile layouts. Software rendering only; real-GPU frame rate not measured.",
   "physical_phone_qa": "Not performed",
   "commands": [
     "npm test",
-    "F033_DOM_TEST_MODULE=<linkedom path> node tests/controller.cjs",
-    "node --check dist/app.js",
+    "F033_DOM_TEST_MODULE=<linkedom path> npm run test:dom",
     "node --check dist/sw.js"
   ]
 }
