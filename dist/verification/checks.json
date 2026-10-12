@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "automated_tests": 35,
+  "controller_checks": 9,
+  "engine": "Phaser 3.90.0 Canvas",
+  "mode": "Seven-night week and Endless",
+  "offline_files": 104,
+  "browser_visual_qa": "Unavailable: managed preview requires a browser-control skill that is not installed. No substitute browser path was used.",
+  "physical_phone_qa": "Not performed",
+  "commands": [
+    "npm test",
+    "F033_DOM_TEST_MODULE=<linkedom path> node tests/controller.cjs",
+    "node --check dist/app.js",
+    "node --check dist/sw.js"
+  ]
+}

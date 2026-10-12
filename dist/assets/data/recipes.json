@@ -1,0 +1,66 @@
+[
+  {
+    "id": "coffee",
+    "name": "Coffee",
+    "price": 6,
+    "cook_seconds": 8,
+    "icon": "runtime/food/coffee.png",
+    "provenance": "Production choice inside F033 price/time ranges"
+  },
+  {
+    "id": "apple-pie",
+    "name": "Apple pie",
+    "price": 8,
+    "cook_seconds": 10,
+    "icon": "runtime/food/apple-pie.png",
+    "provenance": "Production choice inside F033 price/time ranges"
+  },
+  {
+    "id": "breakfast",
+    "name": "Breakfast plate",
+    "price": 18,
+    "cook_seconds": 22,
+    "icon": "runtime/food/breakfast.png",
+    "provenance": "Production choice inside F033 price/time ranges"
+  },
+  {
+    "id": "pancakes",
+    "name": "Pancakes",
+    "price": 12,
+    "cook_seconds": 16,
+    "icon": "runtime/food/pancakes.png",
+    "provenance": "Production choice inside F033 price/time ranges"
+  },
+  {
+    "id": "grilled-cheese-soup",
+    "name": "Grilled cheese & soup",
+    "price": 14,
+    "cook_seconds": 18,
+    "icon": "runtime/food/grilled-cheese-soup.png",
+    "provenance": "Production choice inside F033 price/time ranges"
+  },
+  {
+    "id": "burger-fries",
+    "name": "Burger & fries",
+    "price": 16,
+    "cook_seconds": 20,
+    "icon": "runtime/food/burger-fries.png",
+    "provenance": "Production choice inside F033 price/time ranges"
+  },
+  {
+    "id": "chili",
+    "name": "Chili",
+    "price": 10,
+    "cook_seconds": 12,
+    "icon": "runtime/food/chili.png",
+    "provenance": "Production choice inside F033 price/time ranges"
+  },
+  {
+    "id": "meatloaf",
+    "name": "Meatloaf",
+    "price": 18,
+    "cook_seconds": 22,
+    "icon": "runtime/food/meatloaf.png",
+    "provenance": "Production choice inside F033 price/time ranges"
+  }
+]

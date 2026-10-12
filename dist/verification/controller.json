@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "scope": "DOM/controller integration with stubbed Phaser renderer",
+  "checks": [
+    "Boot and start menu",
+    "Take order, cook and serve through actual DOM buttons",
+    "Four-second evidence reveals",
+    "Two-clue refusal",
+    "Pause/save/menu checkpoint",
+    "Menu settings preserve save",
+    "Continue resumes gameplay",
+    "Receipt survives Escape",
+    "Next night starts"
+  ],
+  "browser_rendering_verified": false,
+  "physical_mobile_verified": false
+}

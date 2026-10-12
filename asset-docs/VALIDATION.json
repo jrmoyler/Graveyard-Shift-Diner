@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "checks": {
+    "png_integrity_and_frame_padding": 156,
+    "svg_parse": 102,
+    "audio_format_peak_duration_and_loop_boundary": 13,
+    "animation_reference_checks": 7,
+    "creature_tell_pairs_with_distinct_actions": 18,
+    "fallback_lines_and_identity_leak_filter": 180,
+    "customer_pose_paths": 18,
+    "font_and_license_files": 4,
+    "runtime_manifest_paths_and_hashes": 306,
+    "original_sheets_byte_identical": 9,
+    "mp4_preview_duration_seconds": 18
+  },
+  "not_verified": [
+    "Full Phaser gameplay/economy integration",
+    "Physical mobile device performance",
+    "Live browser execution of offline viewer (browser binary unavailable)",
+    "Bespoke limb cycles for customers; supplied presets use transforms"
+  ],
+  "visual_review": "Dot/contact sheets and desktop/mobile title, inspector, guide PNG previews inspected."
+}

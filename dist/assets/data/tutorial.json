@@ -1,0 +1,32 @@
+[
+  {
+    "id": "order",
+    "text": "Earl is here. Take his order.",
+    "target": "earl"
+  },
+  {
+    "id": "cook",
+    "text": "Start the grill, then serve Earl.",
+    "target": "burners"
+  },
+  {
+    "id": "notice",
+    "text": "That customer's coffee has no steam.",
+    "target": "coffee"
+  },
+  {
+    "id": "guide",
+    "text": "Open the field guide.",
+    "target": "guide"
+  },
+  {
+    "id": "reflect",
+    "text": "Check the reflection. The guest is missing.",
+    "target": "reflection"
+  },
+  {
+    "id": "refuse",
+    "text": "Two independent tells. Refuse service.",
+    "target": "refuse"
+  }
+]

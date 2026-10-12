@@ -1,0 +1,1843 @@
+{
+  "game": "F033 Graveyard Shift Diner",
+  "version": 2,
+  "assets": [
+    {
+      "id": "animations__dot__clips.json",
+      "path": "runtime/animations/dot/clips.json",
+      "bytes": 2652,
+      "sha256": "abd6a833ad1afa6c526e254a65dd64dcdb72a77cc7891712029fab05525f073c"
+    },
+    {
+      "id": "animations__dot__flinch__00.png",
+      "path": "runtime/animations/dot/flinch/00.png",
+      "bytes": 123542,
+      "sha256": "443291a60910482f058e5921ae0fef5ecc94f2fa252f4844ec81ffa7e70eaf67"
+    },
+    {
+      "id": "animations__dot__flinch__01.png",
+      "path": "runtime/animations/dot/flinch/01.png",
+      "bytes": 126901,
+      "sha256": "c161e619321801d2ec287c5d5491a258e38a0d08c060ffd46efd5f3becaf9264"
+    },
+    {
+      "id": "animations__dot__flinch__02.png",
+      "path": "runtime/animations/dot/flinch/02.png",
+      "bytes": 137250,
+      "sha256": "f386a0e71bc546b4a2fbe121cbf66a8c236efa2ecd5007a4f2aa71ca4255a530"
+    },
+    {
+      "id": "animations__dot__flinch__03.png",
+      "path": "runtime/animations/dot/flinch/03.png",
+      "bytes": 124760,
+      "sha256": "71053058837d0e6b3c7835e32cd3e24ba0be7e44923b8e8e28f86b5dd322854e"
+    },
+    {
+      "id": "animations__dot__flinch.png",
+      "path": "runtime/animations/dot/flinch.png",
+      "bytes": 508338,
+      "sha256": "1e4267741fce722d7c44a112eb6f036dd8bf9d7800a268c357f223bddb3ebf4d"
+    },
+    {
+      "id": "animations__dot__idle__00.png",
+      "path": "runtime/animations/dot/idle/00.png",
+      "bytes": 122409,
+      "sha256": "ece9c237060dbcd7e8c0c59e0b4fa402cf669a1700534e1c8a88cfe384210dde"
+    },
+    {
+      "id": "animations__dot__idle__01.png",
+      "path": "runtime/animations/dot/idle/01.png",
+      "bytes": 122909,
+      "sha256": "86e8ac0a4c3577d52a1949c04ea0d27a602cb39845edd95be257c7e042781283"
+    },
+    {
+      "id": "animations__dot__idle__02.png",
+      "path": "runtime/animations/dot/idle/02.png",
+      "bytes": 122612,
+      "sha256": "01806a0e56d835e6263d19b9be8053b9f41cff288684de4a7510398e350a28d2"
+    },
+    {
+      "id": "animations__dot__idle__03.png",
+      "path": "runtime/animations/dot/idle/03.png",
+      "bytes": 122065,
+      "sha256": "8bcdd8ec95c0cd45abc60d497d9ea09e5126b55f38cfe7e3b272994ffe147257"
+    },
+    {
+      "id": "animations__dot__idle.png",
+      "path": "runtime/animations/dot/idle.png",
+      "bytes": 482597,
+      "sha256": "92cbe7f860e52fd9656f15f3192343549f161c09f58b82e768a44d1f3264e164"
+    },
+    {
+      "id": "animations__dot__inspect__00.png",
+      "path": "runtime/animations/dot/inspect/00.png",
+      "bytes": 114430,
+      "sha256": "f97c075f6227ff993652d0440df2eb582d001b7f2288d524b2c08f51462a7ecd"
+    },
+    {
+      "id": "animations__dot__inspect__01.png",
+      "path": "runtime/animations/dot/inspect/01.png",
+      "bytes": 111559,
+      "sha256": "e33bbbb819a21aa30815f969928419b915d02a386ebeda5a51980e7179ac9402"
+    },
+    {
+      "id": "animations__dot__inspect__02.png",
+      "path": "runtime/animations/dot/inspect/02.png",
+      "bytes": 118175,
+      "sha256": "301407098fec664c3895084f69c69ea6247d08c4b6d85795b72debf542ed8125"
+    },
+    {
+      "id": "animations__dot__inspect__03.png",
+      "path": "runtime/animations/dot/inspect/03.png",
+      "bytes": 110262,
+      "sha256": "b54d845ff9356e651ed51d1c09129b3ea8150705b761be0c074b9771ebc5d5f1"
+    },
+    {
+      "id": "animations__dot__inspect.png",
+      "path": "runtime/animations/dot/inspect.png",
+      "bytes": 451843,
+      "sha256": "f795b769443bf78c1fa1b21709bbf96f3d61dcb23ebfa7f8cf36cb0458282591"
+    },
+    {
+      "id": "animations__dot__pour__00.png",
+      "path": "runtime/animations/dot/pour/00.png",
+      "bytes": 125364,
+      "sha256": "598fff9a46603cfd298e561afe16a56d58ccc734c506378c7e4811eb93bd58a2"
+    },
+    {
+      "id": "animations__dot__pour__01.png",
+      "path": "runtime/animations/dot/pour/01.png",
+      "bytes": 129713,
+      "sha256": "551bee182a2794cc2863903091ef953b0918ea505fa4fe57987ef20bfc18241b"
+    },
+    {
+      "id": "animations__dot__pour__02.png",
+      "path": "runtime/animations/dot/pour/02.png",
+      "bytes": 133143,
+      "sha256": "64bc47d46d932f4d6f58a236c44b2a5fc088ec7e51e5e501a975e06740041079"
+    },
+    {
+      "id": "animations__dot__pour__03.png",
+      "path": "runtime/animations/dot/pour/03.png",
+      "bytes": 127383,
+      "sha256": "9313fad1c30a39919497fbe2bb0c401efe664dd05aea4ee322612e2574db0d7e"
+    },
+    {
+      "id": "animations__dot__pour.png",
+      "path": "runtime/animations/dot/pour.png",
+      "bytes": 509862,
+      "sha256": "8eb1cd198c2c485b55811352d278c5164c3b7c46a01a34d30fa61a23ebb9771f"
+    },
+    {
+      "id": "animations__dot__refuse__00.png",
+      "path": "runtime/animations/dot/refuse/00.png",
+      "bytes": 125561,
+      "sha256": "1fdd1a92c73a729ea1400f333140e13c4c623fd5ce3b0232d7d3d5ac79a71a54"
+    },
+    {
+      "id": "animations__dot__refuse__01.png",
+      "path": "runtime/animations/dot/refuse/01.png",
+      "bytes": 131747,
+      "sha256": "4af7a5a1770af20d4cf882c858248816856bf97e1c52d49aead720a136450093"
+    },
+    {
+      "id": "animations__dot__refuse__02.png",
+      "path": "runtime/animations/dot/refuse/02.png",
+      "bytes": 144210,
+      "sha256": "2d38c79a57b3e009b4e3a55131d99dceb33c814449acaba81b6bb2965e4d0b82"
+    },
+    {
+      "id": "animations__dot__refuse__03.png",
+      "path": "runtime/animations/dot/refuse/03.png",
+      "bytes": 141015,
+      "sha256": "7418784ecabc468898bd047cf4ce152646e95a3bc03ea819d4a05c99ac070025"
+    },
+    {
+      "id": "animations__dot__refuse.png",
+      "path": "runtime/animations/dot/refuse.png",
+      "bytes": 538085,
+      "sha256": "7168cbcc03f8f02124f43813313ef6d2ea069ecbe178bb83624700b808be27b1"
+    },
+    {
+      "id": "animations__dot__serve__00.png",
+      "path": "runtime/animations/dot/serve/00.png",
+      "bytes": 128083,
+      "sha256": "e14a1e877fe930c7a419b0e3a8351633e51adaaf6cc913919b1078941cbf2dbb"
+    },
+    {
+      "id": "animations__dot__serve__01.png",
+      "path": "runtime/animations/dot/serve/01.png",
+      "bytes": 137557,
+      "sha256": "8e28dc21d64cf2756e973716aac6f518122e5d8047d2f8bde3a50a8a02d7228c"
+    },
+    {
+      "id": "animations__dot__serve__02.png",
+      "path": "runtime/animations/dot/serve/02.png",
+      "bytes": 141917,
+      "sha256": "41b86ec0d004cff8824108ce7ed4ecb1257e2b462f8973eab0e227298a955d37"
+    },
+    {
+      "id": "animations__dot__serve__03.png",
+      "path": "runtime/animations/dot/serve/03.png",
+      "bytes": 139585,
+      "sha256": "f9733aac690db49cb370d8acd4a2498755fabb81b7e20252dca68c6897b6aa3b"
+    },
+    {
+      "id": "animations__dot__serve.png",
+      "path": "runtime/animations/dot/serve.png",
+      "bytes": 543649,
+      "sha256": "bebf2c050e4b41f09e8addca34f3d898ac39f754f6acb0764801f47b2d45f90a"
+    },
+    {
+      "id": "animations__dot__walk__00.png",
+      "path": "runtime/animations/dot/walk/00.png",
+      "bytes": 127875,
+      "sha256": "8e2abea81c58a655e0508113d17d7caac2bee4a10f5d45646795b798e845f40d"
+    },
+    {
+      "id": "animations__dot__walk__01.png",
+      "path": "runtime/animations/dot/walk/01.png",
+      "bytes": 119302,
+      "sha256": "f079f4c6fc494c5a33d0e265cc11d4d89738727f8933caed391f918b4fd51db6"
+    },
+    {
+      "id": "animations__dot__walk__02.png",
+      "path": "runtime/animations/dot/walk/02.png",
+      "bytes": 126964,
+      "sha256": "44937414d3af2e29c74c6d7468d13a639e3f7ecd3f8358dcd94676821615bf6a"
+    },
+    {
+      "id": "animations__dot__walk__03.png",
+      "path": "runtime/animations/dot/walk/03.png",
+      "bytes": 107563,
+      "sha256": "190da53241bab749df5ff7dacced8ba61fd1c6d05caa324b79813341251b59b0"
+    },
+    {
+      "id": "animations__dot__walk__04.png",
+      "path": "runtime/animations/dot/walk/04.png",
+      "bytes": 128270,
+      "sha256": "ec2849b9a8f663e0f0aa2ef2300c182af2b74abda3be09ecc0a43ca55b6196fb"
+    },
+    {
+      "id": "animations__dot__walk__05.png",
+      "path": "runtime/animations/dot/walk/05.png",
+      "bytes": 118174,
+      "sha256": "ab8691d127a479079060c76e4fcd7e4c0f657b831200cba25097eea9c51c8c0f"
+    },
+    {
+      "id": "animations__dot__walk__06.png",
+      "path": "runtime/animations/dot/walk/06.png",
+      "bytes": 127637,
+      "sha256": "bc463152f6e34af5ac55b1f49d9cb0b6be9090504936b70aa3e6756cd82d9cb5"
+    },
+    {
+      "id": "animations__dot__walk__07.png",
+      "path": "runtime/animations/dot/walk/07.png",
+      "bytes": 122311,
+      "sha256": "3d4a56eb4c08c43d26cdd5995244954b6c00b7f67992c6f0130358300001023f"
+    },
+    {
+      "id": "animations__dot__walk.png",
+      "path": "runtime/animations/dot/walk.png",
+      "bytes": 964900,
+      "sha256": "d3606580b48721d50011aef9802d69dadb3ebb1fecc5621443e48459af5de4ae"
+    },
+    {
+      "id": "audio__amb-fluorescent.ogg",
+      "path": "runtime/audio/amb-fluorescent.ogg",
+      "bytes": 20879,
+      "sha256": "808b1d8dada92b883a38be71776f6706d7c8f8bd28aa9b82e8587b0461d35a11"
+    },
+    {
+      "id": "audio__amb-fluorescent.wav",
+      "path": "runtime/audio/amb-fluorescent.wav",
+      "bytes": 768044,
+      "sha256": "cb978fe8d51621bbdb010eb0f2c45b378a7c514915fb28531a3152706aa41229"
+    },
+    {
+      "id": "audio__amb-road-wind.ogg",
+      "path": "runtime/audio/amb-road-wind.ogg",
+      "bytes": 51537,
+      "sha256": "79a9a2c6ccacd2e7789abb259c99d77b6a725d1b0a419dbbf9321c8ad8b0057d"
+    },
+    {
+      "id": "audio__amb-road-wind.wav",
+      "path": "runtime/audio/amb-road-wind.wav",
+      "bytes": 1536044,
+      "sha256": "091afe150be2f3c406d55ae9bc320b4263b0358bb54167375b09474c084d5c88"
+    },
+    {
+      "id": "audio__audio-manifest.json",
+      "path": "runtime/audio/audio-manifest.json",
+      "bytes": 6086,
+      "sha256": "f5735e4ae99af21a0500e02ad4ec7932da6512568abe5ab5baadb096a80f5503"
+    },
+    {
+      "id": "audio__music-dread-drone.ogg",
+      "path": "runtime/audio/music-dread-drone.ogg",
+      "bytes": 73477,
+      "sha256": "7bb1205bc078dbcb1f7907076a91d5e103797b0ea1e5c2be97c08cb2de65e462"
+    },
+    {
+      "id": "audio__music-dread-drone.wav",
+      "path": "runtime/audio/music-dread-drone.wav",
+      "bytes": 3072044,
+      "sha256": "c1fc5419684230d6c1428dbdc1f92e4afa5af723ec789d5d85d03f2d49f85e88"
+    },
+    {
+      "id": "audio__music-jukebox.ogg",
+      "path": "runtime/audio/music-jukebox.ogg",
+      "bytes": 187267,
+      "sha256": "b76c929ec4db70afa5fbbeea35db51c7cacc0f2e813aa8880a28744e3b4bbd5c"
+    },
+    {
+      "id": "audio__music-jukebox.wav",
+      "path": "runtime/audio/music-jukebox.wav",
+      "bytes": 5120044,
+      "sha256": "c83259a732e40cfb9bd55b49ccf06d5233722f5a31268bfb88c12f93e8e564ba"
+    },
+    {
+      "id": "audio__sfx-coffee-pour.ogg",
+      "path": "runtime/audio/sfx-coffee-pour.ogg",
+      "bytes": 31949,
+      "sha256": "1db7a3109762457628702f5ec7d9b8f4f88196863b77fffe2835fa22b8f30d3d"
+    },
+    {
+      "id": "audio__sfx-coffee-pour.wav",
+      "path": "runtime/audio/sfx-coffee-pour.wav",
+      "bytes": 422444,
+      "sha256": "ee86f4609a3a90f616ecb3efcdfe9f74550acc8ffa6d2b2ab277a532735fb4eb"
+    },
+    {
+      "id": "audio__sfx-door-bell.ogg",
+      "path": "runtime/audio/sfx-door-bell.ogg",
+      "bytes": 16275,
+      "sha256": "1e397ee90ac84c742cda8554388b8954951145b23f065c3f952795ebf2c886f0"
+    },
+    {
+      "id": "audio__sfx-door-bell.wav",
+      "path": "runtime/audio/sfx-door-bell.wav",
+      "bytes": 307244,
+      "sha256": "3a1a0e679722250df79dafacd47f3a15ed1774cea18ef64398393bd353d81fdc"
+    },
+    {
+      "id": "audio__sfx-grill-sizzle.ogg",
+      "path": "runtime/audio/sfx-grill-sizzle.ogg",
+      "bytes": 63258,
+      "sha256": "88c83e6b7fcd39301db9aeb0e60ec352afd11831e090f0c361ab0caf70454518"
+    },
+    {
+      "id": "audio__sfx-grill-sizzle.wav",
+      "path": "runtime/audio/sfx-grill-sizzle.wav",
+      "bytes": 768044,
+      "sha256": "c107b7c3db64b35747f4efe114746ea5062b3b652975823d4133ea888a16126a"
+    },
+    {
+      "id": "audio__sfx-lantern-gutter.ogg",
+      "path": "runtime/audio/sfx-lantern-gutter.ogg",
+      "bytes": 21761,
+      "sha256": "286f690b21e4fd6bae69a2b9300f5e173477ad98fd89b0a8d0ba6ea014a08fdb"
+    },
+    {
+      "id": "audio__sfx-lantern-gutter.wav",
+      "path": "runtime/audio/sfx-lantern-gutter.wav",
+      "bytes": 288044,
+      "sha256": "9f621d102e92fe2fcba9d9bcead52cbfa9813ded51a855e9d7e4b11d11f3abe4"
+    },
+    {
+      "id": "audio__sfx-neon-buzz.ogg",
+      "path": "runtime/audio/sfx-neon-buzz.ogg",
+      "bytes": 18399,
+      "sha256": "91d7deb0633f3b60dbcb5c6d459d19e9876f71a6031e454a1c7e3c45e3596609"
+    },
+    {
+      "id": "audio__sfx-neon-buzz.wav",
+      "path": "runtime/audio/sfx-neon-buzz.wav",
+      "bytes": 768044,
+      "sha256": "a57adef380d1632ec678163b24576a8f291a0a3972c74a77975580a6f0902218"
+    },
+    {
+      "id": "audio__sfx-plate-set.ogg",
+      "path": "runtime/audio/sfx-plate-set.ogg",
+      "bytes": 8478,
+      "sha256": "31961d5adb645d30008bf0d2af6e8289320cc32ec0c8c6a5bd85fdd95bd81608"
+    },
+    {
+      "id": "audio__sfx-plate-set.wav",
+      "path": "runtime/audio/sfx-plate-set.wav",
+      "bytes": 105644,
+      "sha256": "9596aa8fcd188df968c8d96ffb6e029d84b5edbf4929047ba6315ee8819fa72b"
+    },
+    {
+      "id": "audio__sfx-refuse-door.ogg",
+      "path": "runtime/audio/sfx-refuse-door.ogg",
+      "bytes": 13057,
+      "sha256": "8c41a2a57f15df246723be21fcb7935da19dcfd070d5b8991ea1a11e90c23d03"
+    },
+    {
+      "id": "audio__sfx-refuse-door.wav",
+      "path": "runtime/audio/sfx-refuse-door.wav",
+      "bytes": 163244,
+      "sha256": "79b50a7a61ebc91cb31593e0e972ec9c93923089b8b6ec1f6db2cfc6bbd1ce33"
+    },
+    {
+      "id": "audio__sfx-register.ogg",
+      "path": "runtime/audio/sfx-register.ogg",
+      "bytes": 10944,
+      "sha256": "31ac7e2286c4b2f61bdab74531ff41b34d17fbcd8d6b61bfd5a1a70b3fef5beb"
+    },
+    {
+      "id": "audio__sfx-register.wav",
+      "path": "runtime/audio/sfx-register.wav",
+      "bytes": 172844,
+      "sha256": "16836f44bf2cf057172e704a92e3b40d2fd073ffa5ce8c90418d2fdfc32fde3b"
+    },
+    {
+      "id": "audio__sfx-wrong-bell.ogg",
+      "path": "runtime/audio/sfx-wrong-bell.ogg",
+      "bytes": 16800,
+      "sha256": "398b9e1e6a974db910477e2253ab503ef09957152598b5bc514d3251f9282581"
+    },
+    {
+      "id": "audio__sfx-wrong-bell.wav",
+      "path": "runtime/audio/sfx-wrong-bell.wav",
+      "bytes": 307244,
+      "sha256": "e795dcedad7f73f19a038ffd224f5af2b79c256943fc3b3f876e3fc1506ad363"
+    },
+    {
+      "id": "characters__parts__coach-hale__costume.png",
+      "path": "runtime/characters/parts/coach-hale/costume.png",
+      "bytes": 76432,
+      "sha256": "926f092e965e9c5d6218b0f619e678089bfef9e8b5a354e79713c58742c28db0"
+    },
+    {
+      "id": "characters__parts__coach-hale__head.png",
+      "path": "runtime/characters/parts/coach-hale/head.png",
+      "bytes": 34399,
+      "sha256": "d4802bd2374dbf6a85ced2ccec9eb4ebaff7726c38f818354ee841efb4cfd144"
+    },
+    {
+      "id": "characters__parts__earl__costume.png",
+      "path": "runtime/characters/parts/earl/costume.png",
+      "bytes": 75523,
+      "sha256": "3d38544ea58b11bf560aaea52b2e20ba09db78a484ad3df4cbb3d6fa44365583"
+    },
+    {
+      "id": "characters__parts__earl__head.png",
+      "path": "runtime/characters/parts/earl/head.png",
+      "bytes": 35481,
+      "sha256": "1f6846eac58fc2ba6e5007c31c95f3c86d3dade73c0a80ede6318868f4527143"
+    },
+    {
+      "id": "characters__parts__fog-kin__costume.png",
+      "path": "runtime/characters/parts/fog-kin/costume.png",
+      "bytes": 66860,
+      "sha256": "64199d16d244c9358a829549dea379926988685d908ae631c0e6b061e4f048b0"
+    },
+    {
+      "id": "characters__parts__fog-kin__head.png",
+      "path": "runtime/characters/parts/fog-kin/head.png",
+      "bytes": 49917,
+      "sha256": "f7826c807ccb469135407b07239f9d09bbfaa0b704a959880774aab0eb16977c"
+    },
+    {
+      "id": "characters__parts__hollow-driver__costume.png",
+      "path": "runtime/characters/parts/hollow-driver/costume.png",
+      "bytes": 66020,
+      "sha256": "ba58cd657b3da05a5ee71b8b0805a3ec10555a79cbfc866f11b0ecab854fc038"
+    },
+    {
+      "id": "characters__parts__hollow-driver__head.png",
+      "path": "runtime/characters/parts/hollow-driver/head.png",
+      "bytes": 41958,
+      "sha256": "de7ec528daa33299a352f5a324513310ff6afb0031a5a0639492d11c65c06100"
+    },
+    {
+      "id": "characters__parts__ines__costume.png",
+      "path": "runtime/characters/parts/ines/costume.png",
+      "bytes": 72029,
+      "sha256": "656589a1c460d37737c9a590567aad8f478d718f6f2746435de8fb127e05b624"
+    },
+    {
+      "id": "characters__parts__ines__head.png",
+      "path": "runtime/characters/parts/ines/head.png",
+      "bytes": 41185,
+      "sha256": "af5b39a70392424f3482b6a446c0bebf49040e33ff53ac946537e4d38522527e"
+    },
+    {
+      "id": "characters__parts__lamp-moth__costume.png",
+      "path": "runtime/characters/parts/lamp-moth/costume.png",
+      "bytes": 59630,
+      "sha256": "84200967b2aa8e1aae70511616bef276cba04fd9fa1103796953093a9b7b7ea5"
+    },
+    {
+      "id": "characters__parts__lamp-moth__head.png",
+      "path": "runtime/characters/parts/lamp-moth/head.png",
+      "bytes": 44461,
+      "sha256": "4f35c62f6f928a8e7ea6ceff8a4d0c7a09a2adab4a3b4c2cc5d5e2c94ec77377"
+    },
+    {
+      "id": "characters__parts__librarian__costume.png",
+      "path": "runtime/characters/parts/librarian/costume.png",
+      "bytes": 66331,
+      "sha256": "ac66dd7c9d679a7fada1205c0b5b1f468390a02050216b84c17fd75725de334b"
+    },
+    {
+      "id": "characters__parts__librarian__head.png",
+      "path": "runtime/characters/parts/librarian/head.png",
+      "bytes": 32176,
+      "sha256": "7774319080640fc2cb676925f237c54fc39aafa8241f8d405e2a513fd0e44d28"
+    },
+    {
+      "id": "characters__parts__mechanic__costume.png",
+      "path": "runtime/characters/parts/mechanic/costume.png",
+      "bytes": 69682,
+      "sha256": "4a9f4ac1bbd620e2bb71fa47eed6d130e0ac61ca266272a81c72de627ad807e8"
+    },
+    {
+      "id": "characters__parts__mechanic__head.png",
+      "path": "runtime/characters/parts/mechanic/head.png",
+      "bytes": 29619,
+      "sha256": "d590267a6ca96087f14946e26590c6c1de024e92807170a9ce516713e1050d9c"
+    },
+    {
+      "id": "characters__parts__pale-hitcher__costume.png",
+      "path": "runtime/characters/parts/pale-hitcher/costume.png",
+      "bytes": 64093,
+      "sha256": "30130eefec285bd86a8202dac90a419ade78f63611e83820f03845521494c54f"
+    },
+    {
+      "id": "characters__parts__pale-hitcher__head.png",
+      "path": "runtime/characters/parts/pale-hitcher/head.png",
+      "bytes": 46541,
+      "sha256": "9cf4c7a7da26b378cc69d01cd16c8c11a8381d2cf7de601d91e75cc8df693434"
+    },
+    {
+      "id": "characters__parts__postal-worker__costume.png",
+      "path": "runtime/characters/parts/postal-worker/costume.png",
+      "bytes": 75578,
+      "sha256": "1f2ee6c628f520dfdd4debc07f1c769cce0eded63df78ba085b3f919af8da048"
+    },
+    {
+      "id": "characters__parts__postal-worker__head.png",
+      "path": "runtime/characters/parts/postal-worker/head.png",
+      "bytes": 39683,
+      "sha256": "5250dfbbdaa29603be73c34ff2b59a7e1d9fbdbcdb7061ed3968795c13e6fcd1"
+    },
+    {
+      "id": "characters__parts__pruitt-a__costume.png",
+      "path": "runtime/characters/parts/pruitt-a/costume.png",
+      "bytes": 66800,
+      "sha256": "12ec2f724b75865626e91d07300acca5b29022f9665e9820266ca31e415693a4"
+    },
+    {
+      "id": "characters__parts__pruitt-a__head.png",
+      "path": "runtime/characters/parts/pruitt-a/head.png",
+      "bytes": 41235,
+      "sha256": "6608c296bf543e74bebc35030dc966b047b799642bb1333c3bb4c8fa83351489"
+    },
+    {
+      "id": "characters__parts__pruitt-b__costume.png",
+      "path": "runtime/characters/parts/pruitt-b/costume.png",
+      "bytes": 65234,
+      "sha256": "479b5d37ae856c752145e74ff2211bd745eca0a128235400adca271856fcea8d"
+    },
+    {
+      "id": "characters__parts__pruitt-b__head.png",
+      "path": "runtime/characters/parts/pruitt-b/head.png",
+      "bytes": 40147,
+      "sha256": "8d6821842f8771dd5b4677053c5b05b83043aec8d0ac8fe684597afa52a3219e"
+    },
+    {
+      "id": "characters__parts__reflection-twin__costume.png",
+      "path": "runtime/characters/parts/reflection-twin/costume.png",
+      "bytes": 65782,
+      "sha256": "c6d59680602e44ab3adb95919113407c6c8aa92b377fcc240782bc640581057b"
+    },
+    {
+      "id": "characters__parts__reflection-twin__head.png",
+      "path": "runtime/characters/parts/reflection-twin/head.png",
+      "bytes": 39279,
+      "sha256": "81c2f9ecb5f4cabac6ec6b7e77602e94451d59eabfbe4b53abae1a29d4703418"
+    },
+    {
+      "id": "characters__parts__ricky__costume.png",
+      "path": "runtime/characters/parts/ricky/costume.png",
+      "bytes": 59250,
+      "sha256": "d9b2b5ef78997c0fc890d8c0800d499bd0d2337e459fda4482e79903fffe7ec3"
+    },
+    {
+      "id": "characters__parts__ricky__head.png",
+      "path": "runtime/characters/parts/ricky/head.png",
+      "bytes": 34739,
+      "sha256": "85644983d0ac597cd0ba235e8dfad74cb386f8e16fcd166c45bb43c0ab9c236a"
+    },
+    {
+      "id": "characters__parts__salesman__costume.png",
+      "path": "runtime/characters/parts/salesman/costume.png",
+      "bytes": 63271,
+      "sha256": "6570a468d61833e6660ec7708492a91c8e47507a8e20cb27371c257e39ca6231"
+    },
+    {
+      "id": "characters__parts__salesman__head.png",
+      "path": "runtime/characters/parts/salesman/head.png",
+      "bytes": 29966,
+      "sha256": "97758166dd39c074471fe497653762e6462f1f393f3db91863b7f15b16c4bd5f"
+    },
+    {
+      "id": "characters__parts__under-sleeper__costume.png",
+      "path": "runtime/characters/parts/under-sleeper/costume.png",
+      "bytes": 65850,
+      "sha256": "281f59ed25a96107e565b45e5936eaee2874333bea07a885d0de1619a5dbd990"
+    },
+    {
+      "id": "characters__parts__under-sleeper__head.png",
+      "path": "runtime/characters/parts/under-sleeper/head.png",
+      "bytes": 43875,
+      "sha256": "a41a5a8b36d93d991ac1c6ba440843189fae1e984cb13caf3cf07abdc8a05bb9"
+    },
+    {
+      "id": "characters__parts__vonda__costume.png",
+      "path": "runtime/characters/parts/vonda/costume.png",
+      "bytes": 63627,
+      "sha256": "fdb1b8e221a4b02a6086addeb53dc51d3ffeea576667c2cf7138690877d24a68"
+    },
+    {
+      "id": "characters__parts__vonda__head.png",
+      "path": "runtime/characters/parts/vonda/head.png",
+      "bytes": 44415,
+      "sha256": "b9e20bef84a12dea93b487923b46818ad1683fbb88d7152ae7dc8bc257436a91"
+    },
+    {
+      "id": "characters__parts__warehouse-worker__costume.png",
+      "path": "runtime/characters/parts/warehouse-worker/costume.png",
+      "bytes": 66947,
+      "sha256": "30b41a1529bb422c11c12fdc71f8ac13cfafcb5296e35c05eadbdd8131b4352a"
+    },
+    {
+      "id": "characters__parts__warehouse-worker__head.png",
+      "path": "runtime/characters/parts/warehouse-worker/head.png",
+      "bytes": 33584,
+      "sha256": "f7de7f0787d744bd8e02f32052f34a7197e5510b083bb1e21e79212a80d6d400"
+    },
+    {
+      "id": "characters__seated__coach-hale.png",
+      "path": "runtime/characters/seated/coach-hale.png",
+      "bytes": 250442,
+      "sha256": "e75eb3b463fdd43cf6863bfa8e02b2cf0cfd5acdc7f7edeb120239798a9b8f01"
+    },
+    {
+      "id": "characters__seated__earl.png",
+      "path": "runtime/characters/seated/earl.png",
+      "bytes": 275665,
+      "sha256": "17d7f360bece316403438c5a30dc788b09d0f7cca3eac7c788ea2bfe2e88c2f5"
+    },
+    {
+      "id": "characters__seated__fog-kin.png",
+      "path": "runtime/characters/seated/fog-kin.png",
+      "bytes": 304199,
+      "sha256": "cf4a95f1dafca5e189a5c05e231ddae9867db94404f7717214abcb34608dad43"
+    },
+    {
+      "id": "characters__seated__hollow-driver.png",
+      "path": "runtime/characters/seated/hollow-driver.png",
+      "bytes": 310561,
+      "sha256": "c357d9b2a92b0a049caec97a6859d5ed646757e18b424edb96d77e0fa2e86bcc"
+    },
+    {
+      "id": "characters__seated__ines.png",
+      "path": "runtime/characters/seated/ines.png",
+      "bytes": 285422,
+      "sha256": "f942aa8701912c4b0de8a11cb32eafff2292241ff6da56f9cf2ad7e7e19ac569"
+    },
+    {
+      "id": "characters__seated__lamp-moth.png",
+      "path": "runtime/characters/seated/lamp-moth.png",
+      "bytes": 287622,
+      "sha256": "cb92c6cba4d5000bcfc470e51abaf0ecb559eb6ca26f4fd1e64454bed3c87e4e"
+    },
+    {
+      "id": "characters__seated__librarian.png",
+      "path": "runtime/characters/seated/librarian.png",
+      "bytes": 272695,
+      "sha256": "661910fa31e3ee8ab973184f890e05aa15c9c8578332b9e1f1c912ec2c89a740"
+    },
+    {
+      "id": "characters__seated__mechanic.png",
+      "path": "runtime/characters/seated/mechanic.png",
+      "bytes": 243233,
+      "sha256": "d89b35171ea20f7000d8dbab3ece1d064715a547ecdf6e53f99e10da79badcfe"
+    },
+    {
+      "id": "characters__seated__pale-hitcher.png",
+      "path": "runtime/characters/seated/pale-hitcher.png",
+      "bytes": 297769,
+      "sha256": "65776f16547e4c08cf2e4af900ef23cef7114a8707b7d6853a677cbe18c90467"
+    },
+    {
+      "id": "characters__seated__postal-worker.png",
+      "path": "runtime/characters/seated/postal-worker.png",
+      "bytes": 280819,
+      "sha256": "198302aceaeac0e9296cffe472a89a61f6daf5d195e28d7efb88998617067bce"
+    },
+    {
+      "id": "characters__seated__pruitt-a.png",
+      "path": "runtime/characters/seated/pruitt-a.png",
+      "bytes": 297578,
+      "sha256": "73ab878f9fd270dd26737dced32c0aec2301c732bc39183e2f3fd2d2d16d27c5"
+    },
+    {
+      "id": "characters__seated__pruitt-b.png",
+      "path": "runtime/characters/seated/pruitt-b.png",
+      "bytes": 287308,
+      "sha256": "6c50ef8dab74ece57c793bb5dbafdca3329d7a3490e184de5fe53bb7e5d235f3"
+    },
+    {
+      "id": "characters__seated__reflection-twin.png",
+      "path": "runtime/characters/seated/reflection-twin.png",
+      "bytes": 312567,
+      "sha256": "ce25c5bf02da0f6f65590ce00c205a633b13f2f3655e884cebddd8d9db58531d"
+    },
+    {
+      "id": "characters__seated__ricky.png",
+      "path": "runtime/characters/seated/ricky.png",
+      "bytes": 241289,
+      "sha256": "b0a3956565ee5d48779efc67aa72b6d43ccf265176e5e27189c782c2303323f7"
+    },
+    {
+      "id": "characters__seated__salesman.png",
+      "path": "runtime/characters/seated/salesman.png",
+      "bytes": 238162,
+      "sha256": "4df641be5308c37eb73b212918bfd2f032c843b754b538c5e0a7ba41b401b9a6"
+    },
+    {
+      "id": "characters__seated__under-sleeper.png",
+      "path": "runtime/characters/seated/under-sleeper.png",
+      "bytes": 302895,
+      "sha256": "1660e921d7b356c50e5f2ab0fba06b205530998f2a7bd73c039b6899bc593df2"
+    },
+    {
+      "id": "characters__seated__vonda.png",
+      "path": "runtime/characters/seated/vonda.png",
+      "bytes": 275664,
+      "sha256": "c18c61a880f11af0bdd6509e52559ecff389c8a0698bab4091a78a93bbe0e110"
+    },
+    {
+      "id": "characters__seated__warehouse-worker.png",
+      "path": "runtime/characters/seated/warehouse-worker.png",
+      "bytes": 239756,
+      "sha256": "4794439cd076bb4cd50cc3c465c48af5d9d6c83903198d1b4543e749e0fbcf05"
+    },
+    {
+      "id": "characters__standing__coach-hale.png",
+      "path": "runtime/characters/standing/coach-hale.png",
+      "bytes": 165804,
+      "sha256": "47b22b4708b85772a59d855115fb19e2d8085ae3e3d5b699d7c78f6a4b0655f8"
+    },
+    {
+      "id": "characters__standing__earl.png",
+      "path": "runtime/characters/standing/earl.png",
+      "bytes": 170167,
+      "sha256": "541ceb8bedeaf8484e77eba9a03399c7681ca678899613a8f4be34c728c8f422"
+    },
+    {
+      "id": "characters__standing__fog-kin.png",
+      "path": "runtime/characters/standing/fog-kin.png",
+      "bytes": 148138,
+      "sha256": "f5bd6a7da33d5ad4a53e2fbc6fa56ddbb19543b76feae7d9e0758bb5df79ee04"
+    },
+    {
+      "id": "characters__standing__hollow-driver.png",
+      "path": "runtime/characters/standing/hollow-driver.png",
+      "bytes": 147412,
+      "sha256": "167faa32574f22e55d2188c84e9a87d1c695a19c8e58d63e2a11ce0968a6384d"
+    },
+    {
+      "id": "characters__standing__ines.png",
+      "path": "runtime/characters/standing/ines.png",
+      "bytes": 157607,
+      "sha256": "b1936eceb0092c7fd5c1a847966e6a7748039dd7c0ea06d2627619424f58268d"
+    },
+    {
+      "id": "characters__standing__lamp-moth.png",
+      "path": "runtime/characters/standing/lamp-moth.png",
+      "bytes": 132296,
+      "sha256": "11988f29a4604b6869bd585cfb178e89c32a33170f30a9db2125b78d96c148a1"
+    },
+    {
+      "id": "characters__standing__librarian.png",
+      "path": "runtime/characters/standing/librarian.png",
+      "bytes": 164653,
+      "sha256": "a370d7aa8b49e13a554b7ca9d61c46e7a109b3ae8e01f6f27049613355927283"
+    },
+    {
+      "id": "characters__standing__mechanic.png",
+      "path": "runtime/characters/standing/mechanic.png",
+      "bytes": 169454,
+      "sha256": "64a871512be5eb5bddb7020cd22f11ba5141f66d60852c13cb0bfadb1cb52974"
+    },
+    {
+      "id": "characters__standing__pale-hitcher.png",
+      "path": "runtime/characters/standing/pale-hitcher.png",
+      "bytes": 139081,
+      "sha256": "c895bbf88b761fe97d86dfd29e08ff2950567a125d933d48190fde4f6cbffea3"
+    },
+    {
+      "id": "characters__standing__postal-worker.png",
+      "path": "runtime/characters/standing/postal-worker.png",
+      "bytes": 161865,
+      "sha256": "fe36b192bc6b57e0bf00588dd2d6896d38e699c11dd8c104bbeb1fb12cefc5f2"
+    },
+    {
+      "id": "characters__standing__pruitt-a.png",
+      "path": "runtime/characters/standing/pruitt-a.png",
+      "bytes": 146344,
+      "sha256": "b3d7213a07ee85c1167da1385e6f4741e70e875093ece49e8962c058e895864e"
+    },
+    {
+      "id": "characters__standing__pruitt-b.png",
+      "path": "runtime/characters/standing/pruitt-b.png",
+      "bytes": 143174,
+      "sha256": "1f7780919476317dea66bd4d92d561c0a07eb13f08d20f01124c65375fb21ce1"
+    },
+    {
+      "id": "characters__standing__reflection-twin.png",
+      "path": "runtime/characters/standing/reflection-twin.png",
+      "bytes": 147052,
+      "sha256": "336e72d37ca7babc5a6916290ef7f87bdd0d44143816e971f913bda588d2f85e"
+    },
+    {
+      "id": "characters__standing__ricky.png",
+      "path": "runtime/characters/standing/ricky.png",
+      "bytes": 139602,
+      "sha256": "d906bf7383265e9a9e0082117a643cb05b2876109fc1d09e17610b1bb89e5d3b"
+    },
+    {
+      "id": "characters__standing__salesman.png",
+      "path": "runtime/characters/standing/salesman.png",
+      "bytes": 164103,
+      "sha256": "9fc81b0c3dd12a2c02cc847e75a050159bd2988c72ecaf1b19089aa166dcacaf"
+    },
+    {
+      "id": "characters__standing__under-sleeper.png",
+      "path": "runtime/characters/standing/under-sleeper.png",
+      "bytes": 144943,
+      "sha256": "7b7f5d5d2e7c5c4631f8afb7c0164b15eab1f9390a921318a3a08b985ba43bc0"
+    },
+    {
+      "id": "characters__standing__vonda.png",
+      "path": "runtime/characters/standing/vonda.png",
+      "bytes": 147631,
+      "sha256": "e6cca4ce9d041db70998c977e0dca0e3c93d6c91df524641299ce049dea68133"
+    },
+    {
+      "id": "characters__standing__warehouse-worker.png",
+      "path": "runtime/characters/standing/warehouse-worker.png",
+      "bytes": 162333,
+      "sha256": "da9635918bfb925e69bcf65ac9c799440c89caa3a791e2ce02d63838572ba19c"
+    },
+    {
+      "id": "data__creatures.json",
+      "path": "runtime/data/creatures.json",
+      "bytes": 2165,
+      "sha256": "c76dd7320218fa35190c78d4307ebb1849ccd40b5f1c6d0f9704d16339eea7dd"
+    },
+    {
+      "id": "data__customer-motion-presets.json",
+      "path": "runtime/data/customer-motion-presets.json",
+      "bytes": 3916,
+      "sha256": "ddfad47f0a404cf95598053eb03270cdd4d100196b5d9ce3d68067b24a5fcb25"
+    },
+    {
+      "id": "data__dialogue-180.json",
+      "path": "runtime/data/dialogue-180.json",
+      "bytes": 20371,
+      "sha256": "fac7305ea45979fa84b4b85de129bea177dfc813813df8b4aabdb2dd4c54e881"
+    },
+    {
+      "id": "data__human-small-talk.json",
+      "path": "runtime/data/human-small-talk.json",
+      "bytes": 810,
+      "sha256": "43de420bc730dcc4af5d4c576957b0f36a6685732317903d979455ed8d15f865"
+    },
+    {
+      "id": "data__inspection-actions.json",
+      "path": "runtime/data/inspection-actions.json",
+      "bytes": 724,
+      "sha256": "91316ee89cf9d27a0b42cfee564fb421dd13467664bdd2e4f5e1ca7a9b87a3f2"
+    },
+    {
+      "id": "data__night-manager.json",
+      "path": "runtime/data/night-manager.json",
+      "bytes": 317,
+      "sha256": "b6d81f86755e5e184bf2f1319533fa43aebcfd7345ca3b276520454bb6fd4ba5"
+    },
+    {
+      "id": "data__recipes.json",
+      "path": "runtime/data/recipes.json",
+      "bytes": 1685,
+      "sha256": "bf534698811cf3cefbced490abb2dd0fcb29409d0d981a431e9f73162325368a"
+    },
+    {
+      "id": "data__regulars.json",
+      "path": "runtime/data/regulars.json",
+      "bytes": 2838,
+      "sha256": "b2c89558545f4461572c8cdc4253f6d20a3c7557d9cf90c0d900c8a14ad49b01"
+    },
+    {
+      "id": "data__scene-layout.json",
+      "path": "runtime/data/scene-layout.json",
+      "bytes": 872,
+      "sha256": "6402ca2c895515d6199351dbf182d8e30f8e940636a3c7a62815c2e34d4b163f"
+    },
+    {
+      "id": "data__tells.json",
+      "path": "runtime/data/tells.json",
+      "bytes": 2845,
+      "sha256": "0e8126114438882fd42b9767c21548aaf11972261211369ec3a0ceb00147fc18"
+    },
+    {
+      "id": "data__tutorial.json",
+      "path": "runtime/data/tutorial.json",
+      "bytes": 609,
+      "sha256": "eb555f49a7536ec1c1cfefad0579d001c6f47bd21cfe13758b25e1b3d9d9934c"
+    },
+    {
+      "id": "effects__coffee-steam.png",
+      "path": "runtime/effects/coffee-steam.png",
+      "bytes": 83801,
+      "sha256": "a326406e0c0f873db000a071a3d066ff6e30ef55748a5313b79bbf37b8db4397"
+    },
+    {
+      "id": "effects__cold-breath.png",
+      "path": "runtime/effects/cold-breath.png",
+      "bytes": 115513,
+      "sha256": "a251026717fd7cf4df5e27acadc62dcfa7f64a3b44ed64c3d129fccfca8bf75c"
+    },
+    {
+      "id": "effects__door-fog.png",
+      "path": "runtime/effects/door-fog.png",
+      "bytes": 80184,
+      "sha256": "632e2f0fb5e9f345c7e02e0fd86b3b5145fb2a51732d83dcfc11f9b9b53d1db2"
+    },
+    {
+      "id": "effects__lantern-flame.png",
+      "path": "runtime/effects/lantern-flame.png",
+      "bytes": 117069,
+      "sha256": "5eb726f4711475d28f110a03014177b7f026468358f028797a9777c7f4102a32"
+    },
+    {
+      "id": "effects__neon-flicker.svg",
+      "path": "runtime/effects/neon-flicker.svg",
+      "bytes": 554,
+      "sha256": "7eec5a3e54c7338c709d2879b1595922e074c1c797e872ec6493b3265f3967bc"
+    },
+    {
+      "id": "effects__neon-lit.svg",
+      "path": "runtime/effects/neon-lit.svg",
+      "bytes": 552,
+      "sha256": "cf2225a8b17431659d86d716db2ae4588a94e4df8d27c4dfa49ae062ab6962b8"
+    },
+    {
+      "id": "effects__neon-out.svg",
+      "path": "runtime/effects/neon-out.svg",
+      "bytes": 552,
+      "sha256": "cd10d109bb3a39974fe3c39a526fdbe20fc2b1c7e58a92a0306b4fb8d41e8bc6"
+    },
+    {
+      "id": "effects__sleeve-dust.png",
+      "path": "runtime/effects/sleeve-dust.png",
+      "bytes": 138318,
+      "sha256": "488258decefadaabdd9c3a85b399721529adcf3a6fa93fe35954857255561ada"
+    },
+    {
+      "id": "effects__wet-footprints.png",
+      "path": "runtime/effects/wet-footprints.png",
+      "bytes": 157358,
+      "sha256": "c71c7df4d56bb230fe78211843b16bb1630344f9f5733bf5b87bfcc3e603651c"
+    },
+    {
+      "id": "environment__diner-original.png",
+      "path": "runtime/environment/diner-original.png",
+      "bytes": 1484005,
+      "sha256": "a92e3ba51bf15e113d13e2972062612f0852774010f9fd50387b8c18dd99dac9"
+    },
+    {
+      "id": "environment__diner-rear.png",
+      "path": "runtime/environment/diner-rear.png",
+      "bytes": 1391799,
+      "sha256": "2a80b03ac4d82fd90cc9c0797a5430096fcd205c8c5865675481bb619878e669"
+    },
+    {
+      "id": "environment__modules__booth.png",
+      "path": "runtime/environment/modules/booth.png",
+      "bytes": 223519,
+      "sha256": "e6391c69298b61c4dd6f0232d6e3090f3e848ce54abac00b0aca9e2d33dd9b0d"
+    },
+    {
+      "id": "environment__modules__door-closed.png",
+      "path": "runtime/environment/modules/door-closed.png",
+      "bytes": 233038,
+      "sha256": "9f4f751157944bf3be978e1c33b8baebc82968e61ddd1d282919d47e94e956a9"
+    },
+    {
+      "id": "environment__modules__door-open.png",
+      "path": "runtime/environment/modules/door-open.png",
+      "bytes": 172319,
+      "sha256": "fa19f9a65643a0c62920626fdab15615058abebe2eb2255cdf4d424ba9f608b9"
+    },
+    {
+      "id": "environment__modules__exterior-car.png",
+      "path": "runtime/environment/modules/exterior-car.png",
+      "bytes": 116811,
+      "sha256": "f3128877f07ad5d1adb4ad142869d944461837627e52dd6b667d689ac7814cb8"
+    },
+    {
+      "id": "environment__modules__fluorescent-fixture.png",
+      "path": "runtime/environment/modules/fluorescent-fixture.png",
+      "bytes": 65427,
+      "sha256": "6c9fb920858d85c3906d1fd4339425cb7c5973e04e19504ee8fae05654952f64"
+    },
+    {
+      "id": "environment__modules__service-tray.png",
+      "path": "runtime/environment/modules/service-tray.png",
+      "bytes": 188011,
+      "sha256": "8ea2ee44177860e1af329db11834fe92de0f16a66ca72134df45cc76e9f78c2c"
+    },
+    {
+      "id": "environment__title-keyart.png",
+      "path": "runtime/environment/title-keyart.png",
+      "bytes": 2320024,
+      "sha256": "4e5f5af49af2c15f77101f04f351b90b00cc12300d59f3f3fd75d784470f216b"
+    },
+    {
+      "id": "fonts__IBMPlexMono-OFL.txt",
+      "path": "runtime/fonts/IBMPlexMono-OFL.txt",
+      "bytes": 4364,
+      "sha256": "b5895d3f4ea58b2fc80c3041a8c855d372836c34950d6ebc6e3c8897e7b2c8fb"
+    },
+    {
+      "id": "fonts__IBMPlexMono-Regular.ttf",
+      "path": "runtime/fonts/IBMPlexMono-Regular.ttf",
+      "bytes": 135580,
+      "sha256": "6a3412f058c7d8dfd9170c41e85ade48e5156ecb89356110ca57a0a27734af46"
+    },
+    {
+      "id": "fonts__Pacifico-OFL.txt",
+      "path": "runtime/fonts/Pacifico-OFL.txt",
+      "bytes": 4390,
+      "sha256": "549334cb556f649da7ed0f4fa2c1cd3d2cbc1c589a98cd4c1965d45100a7068d"
+    },
+    {
+      "id": "fonts__Pacifico-Regular.ttf",
+      "path": "runtime/fonts/Pacifico-Regular.ttf",
+      "bytes": 329380,
+      "sha256": "5b6c0d5334a7bf77dea52b975c5a0c408878c0f7115ed5b6fb151f634b7bf701"
+    },
+    {
+      "id": "food__apple-pie.png",
+      "path": "runtime/food/apple-pie.png",
+      "bytes": 255047,
+      "sha256": "8f03fe99f2d395678e768480566baf14c2ca15c72703e9ad7cf82c5e1056690b"
+    },
+    {
+      "id": "food__breakfast.png",
+      "path": "runtime/food/breakfast.png",
+      "bytes": 244445,
+      "sha256": "04b8a1719fa7109d99daaa6fdc94cda1e1500ad237c07e42cd428c69e78e97a0"
+    },
+    {
+      "id": "food__burger-fries.png",
+      "path": "runtime/food/burger-fries.png",
+      "bytes": 268634,
+      "sha256": "6ed1bc1cca047b8a499c546ffa6566c16c5a6318ab88ea60bcdfba6b45032ef6"
+    },
+    {
+      "id": "food__chili.png",
+      "path": "runtime/food/chili.png",
+      "bytes": 288806,
+      "sha256": "34be18373146fb81cb8dcffeacaa56c10b5b0b7937efbb24775c97f90c42febe"
+    },
+    {
+      "id": "food__coffee.png",
+      "path": "runtime/food/coffee.png",
+      "bytes": 271011,
+      "sha256": "a0b74fc5c363ad91f3b48224009d91012d9136809ba3f25c1065274c0ad57987"
+    },
+    {
+      "id": "food__grilled-cheese-soup.png",
+      "path": "runtime/food/grilled-cheese-soup.png",
+      "bytes": 287001,
+      "sha256": "eaee09e522d718b29b0d33a0f069547859642619f59bf8a8c9c2ea90694570e6"
+    },
+    {
+      "id": "food__meatloaf.png",
+      "path": "runtime/food/meatloaf.png",
+      "bytes": 264110,
+      "sha256": "c0a1823e8130457b618b173454a1a3653494265868ecbb0006608e2e703cf628"
+    },
+    {
+      "id": "food__pancakes.png",
+      "path": "runtime/food/pancakes.png",
+      "bytes": 255875,
+      "sha256": "ff772dc533b58fd61f0c2a587355608a795a428505e258aa942b6ea27a9b311f"
+    },
+    {
+      "id": "integration__f033.js",
+      "path": "runtime/integration/f033.js",
+      "bytes": 3819,
+      "sha256": "50a02091554bc94934af3e0878017b4600d4aa2cbcb92bf234250688385ad9c0"
+    },
+    {
+      "id": "props__burners-4.png",
+      "path": "runtime/props/burners-4.png",
+      "bytes": 303848,
+      "sha256": "62f044cb0ec624f8185eb320d5215acb9c5c5c308189f3e4ee66fad6129a22bc"
+    },
+    {
+      "id": "props__coffee-cup.png",
+      "path": "runtime/props/coffee-cup.png",
+      "bytes": 266618,
+      "sha256": "874c7c61ca1d2d1b431040319d1285161df118b8d52b8f6a80996a93ce66a3e3"
+    },
+    {
+      "id": "props__coffee-pot.png",
+      "path": "runtime/props/coffee-pot.png",
+      "bytes": 248907,
+      "sha256": "ef5bf07145a679d071bcff105029306810068319f1b82a9fad7a6859465f1c60"
+    },
+    {
+      "id": "props__door-bell.png",
+      "path": "runtime/props/door-bell.png",
+      "bytes": 203283,
+      "sha256": "8c3e6ed1c7eda380ed7c8205620cfeed86519f6569ec0394be5a5335bdd32e55"
+    },
+    {
+      "id": "props__guide-closed.png",
+      "path": "runtime/props/guide-closed.png",
+      "bytes": 300797,
+      "sha256": "50c4754dddf9addd7e7f938cb911bcf936dd099d882646163780b6d1fcb36ea6"
+    },
+    {
+      "id": "props__guide-open.png",
+      "path": "runtime/props/guide-open.png",
+      "bytes": 190594,
+      "sha256": "3bb72c0097a79809b65911e9c326d0ada1fe337701f73e9513ba816c41b72917"
+    },
+    {
+      "id": "props__lantern-lit.png",
+      "path": "runtime/props/lantern-lit.png",
+      "bytes": 214377,
+      "sha256": "dcc96036eb3caef675e70b2438671033595ee078883ddd4ad3cc6f90f96b9a61"
+    },
+    {
+      "id": "props__lantern-out.png",
+      "path": "runtime/props/lantern-out.png",
+      "bytes": 208314,
+      "sha256": "b2ffbc5abbdd923d53a56d0257354189511d2e596a59605703a3b69a32d404f0"
+    },
+    {
+      "id": "props__napkin-dispenser.png",
+      "path": "runtime/props/napkin-dispenser.png",
+      "bytes": 252089,
+      "sha256": "04cc4d7cb9b1aeb883d978c64d4198cf2f7fdbe5946b0a146d8609111b727e0c"
+    },
+    {
+      "id": "props__pie-case.png",
+      "path": "runtime/props/pie-case.png",
+      "bytes": 308511,
+      "sha256": "e05b97fc89c58380b0e0c703ed9cc6d33d8244253db8cb11e621b5b927b75deb"
+    },
+    {
+      "id": "props__register.png",
+      "path": "runtime/props/register.png",
+      "bytes": 318912,
+      "sha256": "30587f916dcd55111ecd32c7d4dda612253943269eb492be2c608c66471fb52d"
+    },
+    {
+      "id": "props__salt-pepper.png",
+      "path": "runtime/props/salt-pepper.png",
+      "bytes": 350719,
+      "sha256": "7f6505b1989f04166f34461c3b267f51a8ad8150a09b7b4ee100427c5270c879"
+    },
+    {
+      "id": "tells__glove-extra-knuckles.png",
+      "path": "runtime/tells/glove-extra-knuckles.png",
+      "bytes": 227347,
+      "sha256": "97ac2d33fa427d9f2827e729168505f21184595a6fa9ad52f73c8e94ba9cf5ec"
+    },
+    {
+      "id": "tells__glove-normal.png",
+      "path": "runtime/tells/glove-normal.png",
+      "bytes": 222018,
+      "sha256": "31396160609ea5c3c39cda395ebd556080451499040117dc77341db07bafb943"
+    },
+    {
+      "id": "tells__hand-extra-knuckles.png",
+      "path": "runtime/tells/hand-extra-knuckles.png",
+      "bytes": 193768,
+      "sha256": "bfe80a64b36a2517ae5daf6f71ca0d94993c40caadcc7a2c08bfbe1692fb52b1"
+    },
+    {
+      "id": "tells__hand-normal.png",
+      "path": "runtime/tells/hand-normal.png",
+      "bytes": 193005,
+      "sha256": "224280496ad4bd6203523f4a50d309b8d3987ee4b6e0857f78395dd4316fe49b"
+    },
+    {
+      "id": "ui__buttons__coffee-default.svg",
+      "path": "runtime/ui/buttons/coffee-default.svg",
+      "bytes": 2992,
+      "sha256": "128e3ae557ea6c111aad60561754136b6e3ec85f3d4eac01179090c25bc0231b"
+    },
+    {
+      "id": "ui__buttons__coffee-disabled.svg",
+      "path": "runtime/ui/buttons/coffee-disabled.svg",
+      "bytes": 2995,
+      "sha256": "26aa094ec2972baa3efcf80ef3fa65012d67b242871acf8effa6bbd7cc9bbbcf"
+    },
+    {
+      "id": "ui__buttons__coffee-focus.svg",
+      "path": "runtime/ui/buttons/coffee-focus.svg",
+      "bytes": 3086,
+      "sha256": "f7a29ca5f0a7d94615d87fb9859895d105869e7490c54a948a73e3693dc86434"
+    },
+    {
+      "id": "ui__buttons__coffee-hover.svg",
+      "path": "runtime/ui/buttons/coffee-hover.svg",
+      "bytes": 2990,
+      "sha256": "ce3a3aed0fd2412f0db72c049c642c95645489f53ad07999f273fc8d2f6596da"
+    },
+    {
+      "id": "ui__buttons__coffee-pressed.svg",
+      "path": "runtime/ui/buttons/coffee-pressed.svg",
+      "bytes": 2992,
+      "sha256": "1386485ab403f00a0330f3159f26666775b8a358c48fc2a7b04d287131fa8243"
+    },
+    {
+      "id": "ui__buttons__continue-default.svg",
+      "path": "runtime/ui/buttons/continue-default.svg",
+      "bytes": 3479,
+      "sha256": "23b8f0cac01b7bcec13215fdc90416e6efd6b2cb51fde354c6dcc95929c3e64b"
+    },
+    {
+      "id": "ui__buttons__continue-disabled.svg",
+      "path": "runtime/ui/buttons/continue-disabled.svg",
+      "bytes": 3482,
+      "sha256": "d5e9b5baa25ffbad3334ad8e12230c334bac52353ebf590d79312fb4e849cd99"
+    },
+    {
+      "id": "ui__buttons__continue-focus.svg",
+      "path": "runtime/ui/buttons/continue-focus.svg",
+      "bytes": 3573,
+      "sha256": "8ed65498157cf7d3b95539c0229c68ff0d6fd827403fbe02a8c3efd86de9d95c"
+    },
+    {
+      "id": "ui__buttons__continue-hover.svg",
+      "path": "runtime/ui/buttons/continue-hover.svg",
+      "bytes": 3477,
+      "sha256": "4dfa39abf4134d1b536894c8f44ad43eec45908cfe0b6734e4cb9a48d040f080"
+    },
+    {
+      "id": "ui__buttons__continue-pressed.svg",
+      "path": "runtime/ui/buttons/continue-pressed.svg",
+      "bytes": 3479,
+      "sha256": "8f03b35900999e0cc748568b8c6a26e10bcd20b67b0bb0aff89a70238623b316"
+    },
+    {
+      "id": "ui__buttons__hands-default.svg",
+      "path": "runtime/ui/buttons/hands-default.svg",
+      "bytes": 2537,
+      "sha256": "715e01401776d353ba27aa4e41cb1297a4603fd1816683b8c98d14880450df68"
+    },
+    {
+      "id": "ui__buttons__hands-disabled.svg",
+      "path": "runtime/ui/buttons/hands-disabled.svg",
+      "bytes": 2540,
+      "sha256": "d8ecb8dbc17a8bbb4fa4744f5f6fc688ae4e68a25c9a02b5721afd3279a91668"
+    },
+    {
+      "id": "ui__buttons__hands-focus.svg",
+      "path": "runtime/ui/buttons/hands-focus.svg",
+      "bytes": 2631,
+      "sha256": "fdbb38a3de72d09f3d93b3cc0e07c74147cb79d467e74af05bd981ed9e9e6495"
+    },
+    {
+      "id": "ui__buttons__hands-hover.svg",
+      "path": "runtime/ui/buttons/hands-hover.svg",
+      "bytes": 2535,
+      "sha256": "7a7b40c4869c0e8f87cbff6ecf83de5398243a332eaa0b6ba84db61a1dba5664"
+    },
+    {
+      "id": "ui__buttons__hands-pressed.svg",
+      "path": "runtime/ui/buttons/hands-pressed.svg",
+      "bytes": 2537,
+      "sha256": "46d7e4139008fbd022c5d25e7522151c6733114dd497d8cf81366775052ce69d"
+    },
+    {
+      "id": "ui__buttons__pause-default.svg",
+      "path": "runtime/ui/buttons/pause-default.svg",
+      "bytes": 2855,
+      "sha256": "47fa388c5de5b5603a7bb38288c9b900b102cdb78ac79ed6ab68535aa3ba96b3"
+    },
+    {
+      "id": "ui__buttons__pause-disabled.svg",
+      "path": "runtime/ui/buttons/pause-disabled.svg",
+      "bytes": 2858,
+      "sha256": "047523e33b6fde0f37fa70b4885ff2fab0590fa2ed80c7817d06e5622518a54e"
+    },
+    {
+      "id": "ui__buttons__pause-focus.svg",
+      "path": "runtime/ui/buttons/pause-focus.svg",
+      "bytes": 2949,
+      "sha256": "c0e0f029ebd03955c00b11e63e7bec0cb851528e59829a0ec715dd822ab38124"
+    },
+    {
+      "id": "ui__buttons__pause-hover.svg",
+      "path": "runtime/ui/buttons/pause-hover.svg",
+      "bytes": 2853,
+      "sha256": "b69bd3f7f02cd8d5e91bc9df0dd4f3020df34573024b9a882757d73cd641b742"
+    },
+    {
+      "id": "ui__buttons__pause-pressed.svg",
+      "path": "runtime/ui/buttons/pause-pressed.svg",
+      "bytes": 2855,
+      "sha256": "65c036ed71669a58ff4f50e1ad7b226ba3e1dcb027abff5cf38c9400117dafce"
+    },
+    {
+      "id": "ui__buttons__question-default.svg",
+      "path": "runtime/ui/buttons/question-default.svg",
+      "bytes": 4082,
+      "sha256": "349b7fbbe8cfb904151bb25785de2b982e8d71c8432df07b99c61bef04d919b5"
+    },
+    {
+      "id": "ui__buttons__question-disabled.svg",
+      "path": "runtime/ui/buttons/question-disabled.svg",
+      "bytes": 4085,
+      "sha256": "4d24ecf3bde2ac57ffa947b4e3f8574e7816629fa095ae8482b99830a61dc0ad"
+    },
+    {
+      "id": "ui__buttons__question-focus.svg",
+      "path": "runtime/ui/buttons/question-focus.svg",
+      "bytes": 4176,
+      "sha256": "a7c73250edd847a529f0d6c0da9dd2c7aab1a0355604f62cd57374de6bb16f0e"
+    },
+    {
+      "id": "ui__buttons__question-hover.svg",
+      "path": "runtime/ui/buttons/question-hover.svg",
+      "bytes": 4080,
+      "sha256": "2281092712d5ee6a4f2a3247a03910f74382f594996c1fbb6f488f1bdba4303e"
+    },
+    {
+      "id": "ui__buttons__question-pressed.svg",
+      "path": "runtime/ui/buttons/question-pressed.svg",
+      "bytes": 4082,
+      "sha256": "dd6f423c936d5c345e73e5de152e0b9fcc747768277366e54e692fd1bef16318"
+    },
+    {
+      "id": "ui__buttons__reflection-default.svg",
+      "path": "runtime/ui/buttons/reflection-default.svg",
+      "bytes": 4062,
+      "sha256": "e11b0c8fa74c10078f2c71b7a38f1feaac5cd47ee63148b1bc6fa317c5885e87"
+    },
+    {
+      "id": "ui__buttons__reflection-disabled.svg",
+      "path": "runtime/ui/buttons/reflection-disabled.svg",
+      "bytes": 4065,
+      "sha256": "99633834aa891ec454d1e616dc9500b62adecf982c46f647f2bdbe44598d43e3"
+    },
+    {
+      "id": "ui__buttons__reflection-focus.svg",
+      "path": "runtime/ui/buttons/reflection-focus.svg",
+      "bytes": 4156,
+      "sha256": "4375ec201fcababe0253fc43e5a16d30dc85215e81ab595c5e2de69d146a5411"
+    },
+    {
+      "id": "ui__buttons__reflection-hover.svg",
+      "path": "runtime/ui/buttons/reflection-hover.svg",
+      "bytes": 4060,
+      "sha256": "833bd52b3e7f32c6d9d1ea2fb51e3c9f9ce7783f8835af639f5ab171f636beb7"
+    },
+    {
+      "id": "ui__buttons__reflection-pressed.svg",
+      "path": "runtime/ui/buttons/reflection-pressed.svg",
+      "bytes": 4062,
+      "sha256": "ae90bd069df70b1b49037712cfbcf80316b2217e3c347d56360f6d0b0f1a29cc"
+    },
+    {
+      "id": "ui__buttons__refuse-default.svg",
+      "path": "runtime/ui/buttons/refuse-default.svg",
+      "bytes": 3119,
+      "sha256": "bc2cc06346bd73a7ba05673d8f9f5ac77668819b096eaf6a84ce8306698d90fa"
+    },
+    {
+      "id": "ui__buttons__refuse-disabled.svg",
+      "path": "runtime/ui/buttons/refuse-disabled.svg",
+      "bytes": 3122,
+      "sha256": "cad0bc5eda108658d37f7c8ca3aa78dd331bb884eb25c2ac228094f37792c349"
+    },
+    {
+      "id": "ui__buttons__refuse-focus.svg",
+      "path": "runtime/ui/buttons/refuse-focus.svg",
+      "bytes": 3213,
+      "sha256": "3b779a03359e689ac56946a607c4e96cec2f27e0116bc236875a24d0c0778e07"
+    },
+    {
+      "id": "ui__buttons__refuse-hover.svg",
+      "path": "runtime/ui/buttons/refuse-hover.svg",
+      "bytes": 3117,
+      "sha256": "2a882629e48645e22510eb773d66bcb710ad1662ad57d04f261b8497535da179"
+    },
+    {
+      "id": "ui__buttons__refuse-pressed.svg",
+      "path": "runtime/ui/buttons/refuse-pressed.svg",
+      "bytes": 3119,
+      "sha256": "3c5f45abefab85574d75e93fd3afcdc7079e7035dc775006f4d9e2dcad290829"
+    },
+    {
+      "id": "ui__buttons__salt-default.svg",
+      "path": "runtime/ui/buttons/salt-default.svg",
+      "bytes": 1781,
+      "sha256": "3e0b3df769a4031d370a54a6bfe2450a71f2e54b913f4e4170e364740069ef54"
+    },
+    {
+      "id": "ui__buttons__salt-disabled.svg",
+      "path": "runtime/ui/buttons/salt-disabled.svg",
+      "bytes": 1784,
+      "sha256": "bcf232e1eafd71bcfa153e345cbbff60ba125c6a404a3959d7b4084ae53c4f41"
+    },
+    {
+      "id": "ui__buttons__salt-focus.svg",
+      "path": "runtime/ui/buttons/salt-focus.svg",
+      "bytes": 1875,
+      "sha256": "0674c49c5988fe216763938064a4204bb78088f57e4fe1546681975e8567fcac"
+    },
+    {
+      "id": "ui__buttons__salt-hover.svg",
+      "path": "runtime/ui/buttons/salt-hover.svg",
+      "bytes": 1779,
+      "sha256": "043c262edb8cba9b488be9966c3ade50310172b25e756829a9ea4121247e89b9"
+    },
+    {
+      "id": "ui__buttons__salt-pressed.svg",
+      "path": "runtime/ui/buttons/salt-pressed.svg",
+      "bytes": 1781,
+      "sha256": "7f901ea9c4f7f65406e0b738fe4dfa8cbd0978e336ae56eeff347fb3260e2ad3"
+    },
+    {
+      "id": "ui__buttons__serve-default.svg",
+      "path": "runtime/ui/buttons/serve-default.svg",
+      "bytes": 2511,
+      "sha256": "e4079d057b1618454d2907f713cd37d27a1e951c293a32d4b331b9db97e9b3df"
+    },
+    {
+      "id": "ui__buttons__serve-disabled.svg",
+      "path": "runtime/ui/buttons/serve-disabled.svg",
+      "bytes": 2514,
+      "sha256": "e3c08251ff2013e0450b635076a1d66f80c03f9ab55510034ada602c816df904"
+    },
+    {
+      "id": "ui__buttons__serve-focus.svg",
+      "path": "runtime/ui/buttons/serve-focus.svg",
+      "bytes": 2605,
+      "sha256": "40e79616643e023c589b8bb4206ef47c81d05d4ed68f0c3fb4eed97125e7514c"
+    },
+    {
+      "id": "ui__buttons__serve-hover.svg",
+      "path": "runtime/ui/buttons/serve-hover.svg",
+      "bytes": 2509,
+      "sha256": "d38eea5814df75a92533ac0bc14de83d82c3cf3ea2dbbbb84ee684222ada06a5"
+    },
+    {
+      "id": "ui__buttons__serve-pressed.svg",
+      "path": "runtime/ui/buttons/serve-pressed.svg",
+      "bytes": 2511,
+      "sha256": "5cfdd89adb80d453b80e559180f082cca7f4b6570864a8621cbae9f3740a6096"
+    },
+    {
+      "id": "ui__buttons__start-shift-default.svg",
+      "path": "runtime/ui/buttons/start-shift-default.svg",
+      "bytes": 3996,
+      "sha256": "a8cc1e4a67013154075e55bf534a4cd6c066c5038ef803e5f278c765cd30445a"
+    },
+    {
+      "id": "ui__buttons__start-shift-disabled.svg",
+      "path": "runtime/ui/buttons/start-shift-disabled.svg",
+      "bytes": 3999,
+      "sha256": "903664515e5cabf41e5b8ca816b4af163945f6e6226edee85e7dd961da617a78"
+    },
+    {
+      "id": "ui__buttons__start-shift-focus.svg",
+      "path": "runtime/ui/buttons/start-shift-focus.svg",
+      "bytes": 4090,
+      "sha256": "0eda9faa2ac27a1615dab243d171e6bab963aaa94975fd5bf464880a1af77678"
+    },
+    {
+      "id": "ui__buttons__start-shift-hover.svg",
+      "path": "runtime/ui/buttons/start-shift-hover.svg",
+      "bytes": 3994,
+      "sha256": "5715e67d82e8a8a66c447e8057202d27dc0a2f4096f583bbab41b9e05d22f746"
+    },
+    {
+      "id": "ui__buttons__start-shift-pressed.svg",
+      "path": "runtime/ui/buttons/start-shift-pressed.svg",
+      "bytes": 3996,
+      "sha256": "44dceecbf85a28505edde23e662da44630bd0781d2978a24d635205d9313f519"
+    },
+    {
+      "id": "ui__dot-badge.svg",
+      "path": "runtime/ui/dot-badge.svg",
+      "bytes": 1277,
+      "sha256": "9f8dd7a65439891848c972b324af735dbe4ecfa742bb6f8f819da667184b6f31"
+    },
+    {
+      "id": "ui__guide__fog-kin.svg",
+      "path": "runtime/ui/guide/fog-kin.svg",
+      "bytes": 59787,
+      "sha256": "1fc16957f8e4846050f188bcfaa29e9c944361aa948bd837923a78d216b2a1d2"
+    },
+    {
+      "id": "ui__guide__hollow-driver.svg",
+      "path": "runtime/ui/guide/hollow-driver.svg",
+      "bytes": 59539,
+      "sha256": "03ff0cf1d948a2146472c4227ce9f1a42952372dcf910a7de1df6032bebb37f6"
+    },
+    {
+      "id": "ui__guide__lamp-moth.svg",
+      "path": "runtime/ui/guide/lamp-moth.svg",
+      "bytes": 58539,
+      "sha256": "7083592b10a052a494aedf3bbeef2335323fe54d72415010f50ccd00d246216e"
+    },
+    {
+      "id": "ui__guide__pale-hitcher.svg",
+      "path": "runtime/ui/guide/pale-hitcher.svg",
+      "bytes": 56343,
+      "sha256": "4778d7b5751476314155260dd659a79e4a317c750589de8b3571dfbe003f3955"
+    },
+    {
+      "id": "ui__guide__reflection-twin.svg",
+      "path": "runtime/ui/guide/reflection-twin.svg",
+      "bytes": 63154,
+      "sha256": "7cfded91d8bda615f7686c9af4a2a57007df5495ff0bd9fdd53a8e571e62e050"
+    },
+    {
+      "id": "ui__guide__regular-coach-hale.svg",
+      "path": "runtime/ui/guide/regular-coach-hale.svg",
+      "bytes": 49767,
+      "sha256": "026558f714cc0f1a4054392de480b46ba36623c827d2dcdd54ef854b078a87da"
+    },
+    {
+      "id": "ui__guide__regular-earl.svg",
+      "path": "runtime/ui/guide/regular-earl.svg",
+      "bytes": 46122,
+      "sha256": "1b031872bf505aba2fe050332b774a8ad1c2202bd874395215fecfe183ce52e5"
+    },
+    {
+      "id": "ui__guide__regular-ines.svg",
+      "path": "runtime/ui/guide/regular-ines.svg",
+      "bytes": 47078,
+      "sha256": "a4f3120f0ee0124ed965521d6f71b7f0ca8dee021be05a0da5701d8fb1e238eb"
+    },
+    {
+      "id": "ui__guide__regular-pruitt-twins.svg",
+      "path": "runtime/ui/guide/regular-pruitt-twins.svg",
+      "bytes": 52462,
+      "sha256": "4d11c789402df02d48a23c898131977e7aaae3963dd5d2109771d305556f3248"
+    },
+    {
+      "id": "ui__guide__regular-ricky.svg",
+      "path": "runtime/ui/guide/regular-ricky.svg",
+      "bytes": 48570,
+      "sha256": "2eb860d127c0ce6c43a374ae9e432960336c5de92a07b5cd31030187493a8513"
+    },
+    {
+      "id": "ui__guide__regular-vonda.svg",
+      "path": "runtime/ui/guide/regular-vonda.svg",
+      "bytes": 45615,
+      "sha256": "48aa2fa97d617f1138509847801b0593631f72d9f86195ba3f1baf1f07687b69"
+    },
+    {
+      "id": "ui__guide__under-sleeper.svg",
+      "path": "runtime/ui/guide/under-sleeper.svg",
+      "bytes": 62914,
+      "sha256": "8a1e9a3ed07dd13ce7fbccb6e13510c7507c5cc83c79950669886bd37b57e7e8"
+    },
+    {
+      "id": "ui__guide-page-template.svg",
+      "path": "runtime/ui/guide-page-template.svg",
+      "bytes": 57322,
+      "sha256": "bcd6f035ebf263069d0a0a7c2833c264c692e352c9b90eb636aa29e449d61789"
+    },
+    {
+      "id": "ui__hud-desktop.svg",
+      "path": "runtime/ui/hud-desktop.svg",
+      "bytes": 17785,
+      "sha256": "f8db9429fb3bb5d377f9817c5c2356fb52f51b95a002f734e575eb3ff5a00ca6"
+    },
+    {
+      "id": "ui__hud-mobile.svg",
+      "path": "runtime/ui/hud-mobile.svg",
+      "bytes": 15915,
+      "sha256": "977eadd54aca050f99c9cbcbeda57368a848cdc53e64bd6d6a6f819f7b9f1498"
+    },
+    {
+      "id": "ui__icons__blink.svg",
+      "path": "runtime/ui/icons/blink.svg",
+      "bytes": 275,
+      "sha256": "ff0d2acdb7408e882388786788b512e3a1e384baf7758239203af10ccffb6cd0"
+    },
+    {
+      "id": "ui__icons__car.svg",
+      "path": "runtime/ui/icons/car.svg",
+      "bytes": 275,
+      "sha256": "7b2e12bd0ab919e254985db2f08f352d57241fff046c69ded32a997d01de3d51"
+    },
+    {
+      "id": "ui__icons__cash.svg",
+      "path": "runtime/ui/icons/cash.svg",
+      "bytes": 279,
+      "sha256": "1c122f219b60a98189fe8fa77b88272a575f06bf1a32eb97f0521572f25f654f"
+    },
+    {
+      "id": "ui__icons__clock.svg",
+      "path": "runtime/ui/icons/clock.svg",
+      "bytes": 263,
+      "sha256": "36fc087f88286bef68ca4ac5b76791d624035d04ac28efbaf5f724cdde31ecf9"
+    },
+    {
+      "id": "ui__icons__coffee.svg",
+      "path": "runtime/ui/icons/coffee.svg",
+      "bytes": 303,
+      "sha256": "c8aa21c1f86c436dc228d84fc5022e96a4d7cf6e87e5250d27d6690c1aae074a"
+    },
+    {
+      "id": "ui__icons__coins.svg",
+      "path": "runtime/ui/icons/coins.svg",
+      "bytes": 272,
+      "sha256": "02721133f3303582d9fa449ed1e38fc79e3c712fc2199f9dc57eabc318a2e6dd"
+    },
+    {
+      "id": "ui__icons__footprints.svg",
+      "path": "runtime/ui/icons/footprints.svg",
+      "bytes": 280,
+      "sha256": "1a470c6519c1d770d316514f6ccff82e16ea5fc7a5eb073918f6eaa0dfb6a09a"
+    },
+    {
+      "id": "ui__icons__hands.svg",
+      "path": "runtime/ui/icons/hands.svg",
+      "bytes": 375,
+      "sha256": "5d9c066347fb61b77b014f46df19541329be457dd4e423ceb34fd69e3800f292"
+    },
+    {
+      "id": "ui__icons__lantern.svg",
+      "path": "runtime/ui/icons/lantern.svg",
+      "bytes": 285,
+      "sha256": "fa335bc7d97eba2b022e923ef969e379cd32da4c8630b684b5308d7b15e675a9"
+    },
+    {
+      "id": "ui__icons__pause.svg",
+      "path": "runtime/ui/icons/pause.svg",
+      "bytes": 226,
+      "sha256": "ddfb608ce6c174cc6426ce14492e36da3e0123b5321e60e92303c1a2d9dce3d0"
+    },
+    {
+      "id": "ui__icons__question.svg",
+      "path": "runtime/ui/icons/question.svg",
+      "bytes": 285,
+      "sha256": "78d607a511de4990e3504661be02c7a43fc59834230c1782a9d7653ce600440a"
+    },
+    {
+      "id": "ui__icons__reflection.svg",
+      "path": "runtime/ui/icons/reflection.svg",
+      "bytes": 253,
+      "sha256": "d03508c07a446fb1fe2709b07a042c8de6c6cb3f71e30dd62f7b399de39e4c79"
+    },
+    {
+      "id": "ui__icons__refuse.svg",
+      "path": "runtime/ui/icons/refuse.svg",
+      "bytes": 261,
+      "sha256": "146f7a35351e924b80cf2c24bc977dda3ebdd312ac717a628cc199b56a96348f"
+    },
+    {
+      "id": "ui__icons__reputation.svg",
+      "path": "runtime/ui/icons/reputation.svg",
+      "bytes": 271,
+      "sha256": "14e8a63ec8f4d52bd5657b9feee18155dae0a5f1d4649afb9d31c9d510a53f9b"
+    },
+    {
+      "id": "ui__icons__salt.svg",
+      "path": "runtime/ui/icons/salt.svg",
+      "bytes": 262,
+      "sha256": "5ee34dbc4c802afe990d89956b9c7f34863881023c2f61fbb06772d05ff69076"
+    },
+    {
+      "id": "ui__icons__serve.svg",
+      "path": "runtime/ui/icons/serve.svg",
+      "bytes": 257,
+      "sha256": "586f484769a41785799ce551e4b38fdd10535c1ece2bcf6563b8a8a17f40ec2d"
+    },
+    {
+      "id": "ui__inspector.svg",
+      "path": "runtime/ui/inspector.svg",
+      "bytes": 48195,
+      "sha256": "38efc3b7c11c5c3c1b5f2782f8a21cb890d0772730c3d1ff34d4a25dde805ff2"
+    },
+    {
+      "id": "ui__order-ticket.svg",
+      "path": "runtime/ui/order-ticket.svg",
+      "bytes": 25557,
+      "sha256": "96ac944128d6e328f1466c2fcad3e6d4e081e0f388c8dda24a0b5f6abbc1ad7e"
+    },
+    {
+      "id": "ui__panels__darkness.svg",
+      "path": "runtime/ui/panels/darkness.svg",
+      "bytes": 26084,
+      "sha256": "67c66de3c07b90866da1bee4d266c67238252f156106700abf4a1e93e33974f6"
+    },
+    {
+      "id": "ui__panels__fired.svg",
+      "path": "runtime/ui/panels/fired.svg",
+      "bytes": 25176,
+      "sha256": "33b3fe5d268922614e35a7b556191c4d404f6c723e1b821575cb5eff72ad2608"
+    },
+    {
+      "id": "ui__panels__pause.svg",
+      "path": "runtime/ui/panels/pause.svg",
+      "bytes": 19056,
+      "sha256": "bd70bee8d5602013fb035abbe82adcaf66574e185e1e9f7ea5682edcf3e34d4f"
+    },
+    {
+      "id": "ui__panels__shift-start.svg",
+      "path": "runtime/ui/panels/shift-start.svg",
+      "bytes": 24883,
+      "sha256": "bd2d4bae8743abdb22940a24ecd4e49983096b88a4b43c8869289fd93a0c9fba"
+    },
+    {
+      "id": "ui__patience-ring.svg",
+      "path": "runtime/ui/patience-ring.svg",
+      "bytes": 1041,
+      "sha256": "dcef166cd23863b9260852a43b5741595b9459fb5e3989503ce0c64e78092b3f"
+    },
+    {
+      "id": "ui__receipt-panel.svg",
+      "path": "runtime/ui/receipt-panel.svg",
+      "bytes": 58217,
+      "sha256": "bfdc2137a2c9e26044b582b8a7f4867d1d9670e657bdc544c83f14fd7688b003"
+    },
+    {
+      "id": "ui__screens__credits.svg",
+      "path": "runtime/ui/screens/credits.svg",
+      "bytes": 78164,
+      "sha256": "a9e6bd5def4434b9b0ecc43953fb8479dd4cfd475ab14bf07287743cbfa53850"
+    },
+    {
+      "id": "ui__screens__title-desktop.svg",
+      "path": "runtime/ui/screens/title-desktop.svg",
+      "bytes": 3157444,
+      "sha256": "d323b6eae6817af4efe6a2c14c89a072edde70f5b280b9260c3645103a10735d"
+    },
+    {
+      "id": "ui__screens__title-mobile.svg",
+      "path": "runtime/ui/screens/title-mobile.svg",
+      "bytes": 3136224,
+      "sha256": "3b0072cae3bca5536eb458510e673efc20f9344c9e07f97cf484c6cf209e17eb"
+    },
+    {
+      "id": "ui__settings.svg",
+      "path": "runtime/ui/settings.svg",
+      "bytes": 32635,
+      "sha256": "1bfb38fe228056b7f665e29874feb255c72def2a01388dd36ef664568b5e09fb"
+    },
+    {
+      "id": "ui__tells__shadow-normal.svg",
+      "path": "runtime/ui/tells/shadow-normal.svg",
+      "bytes": 341,
+      "sha256": "9ff2e87cd5e29c6f77478ef1af283e30b263a75cd5cc6d59cd1ac90353517a3a"
+    },
+    {
+      "id": "ui__tells__shadow-offset.svg",
+      "path": "runtime/ui/tells/shadow-offset.svg",
+      "bytes": 341,
+      "sha256": "723aa3f3eeacd9d23839808c8a3e7e0b507ad31a46fc3d9fc28d37c62c5bb3d8"
+    },
+    {
+      "id": "ui__title-wordmark.svg",
+      "path": "runtime/ui/title-wordmark.svg",
+      "bytes": 13230,
+      "sha256": "32b8adebb10c3b98d4eaa94d11a882dd6f36b0d34d803183862483167484ce08"
+    },
+    {
+      "id": "ui__ui-manifest.json",
+      "path": "runtime/ui/ui-manifest.json",
+      "bytes": 4291,
+      "sha256": "0fda172f214a9ee4aebe6290254e693eef5fce9aa47b4d9e3827df3258aa549a"
+    },
+    {
+      "id": "ui__upgrades__bell.svg",
+      "path": "runtime/ui/upgrades/bell.svg",
+      "bytes": 11193,
+      "sha256": "95c74939ce4bfdea6da8a4c628253c5b96f107a3a7175e2b051a7412161c120c"
+    },
+    {
+      "id": "ui__upgrades__burners.svg",
+      "path": "runtime/ui/upgrades/burners.svg",
+      "bytes": 15470,
+      "sha256": "5b8a8a5402a3ff1ceb25572807d8616611cf84947e5cfa684008176b08bbbfba"
+    },
+    {
+      "id": "ui__upgrades__cook.svg",
+      "path": "runtime/ui/upgrades/cook.svg",
+      "bytes": 12772,
+      "sha256": "554576f0e9cdbaa66ce1860a0d492f169f7f2d2c4c46c4feb709999f2cd427e6"
+    },
+    {
+      "id": "ui__upgrades__mirror.svg",
+      "path": "runtime/ui/upgrades/mirror.svg",
+      "bytes": 14818,
+      "sha256": "5237b9d593c947a2e167a0017b1b1b8d52da74246274444fa08670ac8ba59077"
+    },
+    {
+      "id": "ui__upgrades__salt.svg",
+      "path": "runtime/ui/upgrades/salt.svg",
+      "bytes": 12057,
+      "sha256": "ce526e58ff249093df5ee5b52477dd2dc18bab1bc380fc662dee29e731de7a1c"
+    },
+    {
+      "id": "upgrades__burner-upgrade.png",
+      "path": "runtime/upgrades/burner-upgrade.png",
+      "bytes": 296268,
+      "sha256": "f6c9bd3d6abfcda563e4e6cd2b0f724cc6823e930f808b1478587750927f9b9a"
+    },
+    {
+      "id": "upgrades__hired-cook-idle.png",
+      "path": "runtime/upgrades/hired-cook-idle.png",
+      "bytes": 126349,
+      "sha256": "88ee784164444dc7bd6854c0354bfbe17df0e166de39dbee1d5bac1e3b2be90f"
+    },
+    {
+      "id": "upgrades__hired-cook-work.png",
+      "path": "runtime/upgrades/hired-cook-work.png",
+      "bytes": 131374,
+      "sha256": "dd830c424c7949d7120e1838e323007a0863e56a3770e0c1853b27b52e0868af"
+    },
+    {
+      "id": "upgrades__jukebox.png",
+      "path": "runtime/upgrades/jukebox.png",
+      "bytes": 332827,
+      "sha256": "24abc77396c8eaa42038fb94178a863e1b9c6b794988088753832b0e03068aed"
+    },
+    {
+      "id": "upgrades__mirror.png",
+      "path": "runtime/upgrades/mirror.png",
+      "bytes": 278341,
+      "sha256": "1e4c131c1199167df4e2366aaef9861432e9edb15bf2514254751d18c8325f93"
+    },
+    {
+      "id": "upgrades__night-manager.png",
+      "path": "runtime/upgrades/night-manager.png",
+      "bytes": 101970,
+      "sha256": "da9a507af10be6e80e5c1d578b469f8971e8728acf7249d864fbb17a3a49465b"
+    }
+  ],
+  "review": "File/format and static visual checks completed; full Phaser gameplay and physical device checks not performed."
+}

@@ -1,0 +1,137 @@
+{
+  "method": "Code-driven transforms of exported standing/seated illustrations, NOT bespoke frame-by-frame limb cycles",
+  "states": {
+    "arrive": {
+      "pose": "standing",
+      "motion": "translate-to-seat",
+      "duration_ms": 1600
+    },
+    "ordering": {
+      "pose": "seated",
+      "motion": "gentle-breathing",
+      "duration_ms": 1200
+    },
+    "waiting": {
+      "pose": "seated",
+      "motion": "gentle-breathing",
+      "duration_ms": 1600
+    },
+    "eating": {
+      "pose": "seated",
+      "motion": "subtle-body-lean",
+      "duration_ms": 1800
+    },
+    "paying": {
+      "pose": "standing",
+      "motion": "gentle-breathing",
+      "duration_ms": 900
+    },
+    "leave": {
+      "pose": "standing",
+      "motion": "translate-to-exit",
+      "duration_ms": 1600
+    },
+    "refused": {
+      "pose": "standing",
+      "motion": "translate-to-exit",
+      "duration_ms": 1000
+    },
+    "lingering": {
+      "pose": "seated",
+      "motion": "still",
+      "duration_ms": 2000
+    }
+  },
+  "characters": [
+    {
+      "id": "hollow-driver",
+      "standing": "runtime/characters/standing/hollow-driver.png",
+      "seated": "runtime/characters/seated/hollow-driver.png"
+    },
+    {
+      "id": "fog-kin",
+      "standing": "runtime/characters/standing/fog-kin.png",
+      "seated": "runtime/characters/seated/fog-kin.png"
+    },
+    {
+      "id": "under-sleeper",
+      "standing": "runtime/characters/standing/under-sleeper.png",
+      "seated": "runtime/characters/seated/under-sleeper.png"
+    },
+    {
+      "id": "lamp-moth",
+      "standing": "runtime/characters/standing/lamp-moth.png",
+      "seated": "runtime/characters/seated/lamp-moth.png"
+    },
+    {
+      "id": "reflection-twin",
+      "standing": "runtime/characters/standing/reflection-twin.png",
+      "seated": "runtime/characters/seated/reflection-twin.png"
+    },
+    {
+      "id": "pale-hitcher",
+      "standing": "runtime/characters/standing/pale-hitcher.png",
+      "seated": "runtime/characters/seated/pale-hitcher.png"
+    },
+    {
+      "id": "earl",
+      "standing": "runtime/characters/standing/earl.png",
+      "seated": "runtime/characters/seated/earl.png"
+    },
+    {
+      "id": "vonda",
+      "standing": "runtime/characters/standing/vonda.png",
+      "seated": "runtime/characters/seated/vonda.png"
+    },
+    {
+      "id": "pruitt-a",
+      "standing": "runtime/characters/standing/pruitt-a.png",
+      "seated": "runtime/characters/seated/pruitt-a.png"
+    },
+    {
+      "id": "pruitt-b",
+      "standing": "runtime/characters/standing/pruitt-b.png",
+      "seated": "runtime/characters/seated/pruitt-b.png"
+    },
+    {
+      "id": "coach-hale",
+      "standing": "runtime/characters/standing/coach-hale.png",
+      "seated": "runtime/characters/seated/coach-hale.png"
+    },
+    {
+      "id": "ines",
+      "standing": "runtime/characters/standing/ines.png",
+      "seated": "runtime/characters/seated/ines.png"
+    },
+    {
+      "id": "ricky",
+      "standing": "runtime/characters/standing/ricky.png",
+      "seated": "runtime/characters/seated/ricky.png"
+    },
+    {
+      "id": "postal-worker",
+      "standing": "runtime/characters/standing/postal-worker.png",
+      "seated": "runtime/characters/seated/postal-worker.png"
+    },
+    {
+      "id": "mechanic",
+      "standing": "runtime/characters/standing/mechanic.png",
+      "seated": "runtime/characters/seated/mechanic.png"
+    },
+    {
+      "id": "salesman",
+      "standing": "runtime/characters/standing/salesman.png",
+      "seated": "runtime/characters/seated/salesman.png"
+    },
+    {
+      "id": "warehouse-worker",
+      "standing": "runtime/characters/standing/warehouse-worker.png",
+      "seated": "runtime/characters/seated/warehouse-worker.png"
+    },
+    {
+      "id": "librarian",
+      "standing": "runtime/characters/standing/librarian.png",
+      "seated": "runtime/characters/seated/librarian.png"
+    }
+  ]
+}

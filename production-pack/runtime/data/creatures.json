@@ -1,0 +1,80 @@
+[
+  {
+    "id": "hollow-driver",
+    "name": "Hollow Driver",
+    "tells": [
+      "no-reflection",
+      "cold-coffee",
+      "knows-name"
+    ],
+    "portrait": "runtime/characters/seated/hollow-driver.png",
+    "guide_title": "Hollow Driver",
+    "exact_tells": 2,
+    "rules_note": "Each selected pair maps to different actions in this production mapping."
+  },
+  {
+    "id": "fog-kin",
+    "name": "Fog Kin",
+    "tells": [
+      "wet-footprints",
+      "echo-sentence",
+      "refuses-salt"
+    ],
+    "portrait": "runtime/characters/seated/fog-kin.png",
+    "guide_title": "Fog Kin",
+    "exact_tells": 2,
+    "rules_note": "Each selected pair maps to different actions in this production mapping."
+  },
+  {
+    "id": "under-sleeper",
+    "name": "Under-Sleeper",
+    "tells": [
+      "extra-knuckles",
+      "shadow-offset",
+      "usual-first-visit"
+    ],
+    "portrait": "runtime/characters/seated/under-sleeper.png",
+    "guide_title": "Under-Sleeper",
+    "exact_tells": 2,
+    "rules_note": "Each selected pair maps to different actions in this production mapping."
+  },
+  {
+    "id": "lamp-moth",
+    "name": "Lamp Moth",
+    "tells": [
+      "drawn-to-neon",
+      "sleeve-dust",
+      "never-blinks"
+    ],
+    "portrait": "runtime/characters/seated/lamp-moth.png",
+    "guide_title": "Lamp Moth",
+    "exact_tells": 2,
+    "rules_note": "Each selected pair maps to different actions in this production mapping."
+  },
+  {
+    "id": "reflection-twin",
+    "name": "Reflection Twin",
+    "tells": [
+      "duplicate-regular",
+      "mirrored-hair",
+      "wrong-hand"
+    ],
+    "portrait": "runtime/characters/seated/reflection-twin.png",
+    "guide_title": "Reflection Twin",
+    "exact_tells": 2,
+    "rules_note": "Each selected pair maps to different actions in this production mapping."
+  },
+  {
+    "id": "pale-hitcher",
+    "name": "Pale Hitcher",
+    "tells": [
+      "no-car",
+      "cold-breath",
+      "old-coins"
+    ],
+    "portrait": "runtime/characters/seated/pale-hitcher.png",
+    "guide_title": "Pale Hitcher",
+    "exact_tells": 2,
+    "rules_note": "Each selected pair maps to different actions in this production mapping."
+  }
+]

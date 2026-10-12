@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "checks": [
+    "Evidence layers independent",
+    "8-degree offset",
+    "Accessibility settings",
+    "180 fallback selections bounded and nonleaking",
+    "Exact echo fallback",
+    "All adapter preload paths exist",
+    "Seven valid animation registrations",
+    "Lingering still state"
+  ],
+  "full_phaser_run": false
+}

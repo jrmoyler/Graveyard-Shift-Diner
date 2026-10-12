@@ -1,0 +1,59 @@
+{
+  "reference_size": [
+    1672,
+    620
+  ],
+  "table_targets": [
+    {
+      "id": 1,
+      "x": 225,
+      "y": 345,
+      "width": 150,
+      "height": 130
+    },
+    {
+      "id": 2,
+      "x": 410,
+      "y": 345,
+      "width": 150,
+      "height": 130
+    },
+    {
+      "id": 3,
+      "x": 595,
+      "y": 345,
+      "width": 150,
+      "height": 130
+    },
+    {
+      "id": 4,
+      "x": 780,
+      "y": 345,
+      "width": 150,
+      "height": 130
+    },
+    {
+      "id": 5,
+      "x": 965,
+      "y": 345,
+      "width": 150,
+      "height": 130
+    },
+    {
+      "id": 6,
+      "x": 1150,
+      "y": 345,
+      "width": 150,
+      "height": 130
+    }
+  ],
+  "door": [
+    38,
+    265
+  ],
+  "service_counter": [
+    1445,
+    365
+  ],
+  "note": "Proposed normalized interaction anchors; consuming Phaser scene must register against selected background."
+}

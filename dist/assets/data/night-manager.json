@@ -1,0 +1,12 @@
+{
+  "appearance": "runtime/upgrades/night-manager.png",
+  "night": 7,
+  "event": "Three creatures in one rush",
+  "lines": [
+    "You have kept the lamps burning.",
+    "The tables are full tonight.",
+    "Count what is still yours.",
+    "I will wait until you close.",
+    "There is work left after the bell."
+  ]
+}

@@ -1,0 +1,128 @@
+[
+  {
+    "id": "no-reflection",
+    "action": "reflection",
+    "label": "No reflection",
+    "caption": "No reflection",
+    "visual_control": "no-reflection"
+  },
+  {
+    "id": "cold-coffee",
+    "action": "coffee",
+    "label": "Cold coffee",
+    "caption": "Cold coffee",
+    "visual_control": "cold-coffee"
+  },
+  {
+    "id": "knows-name",
+    "action": "question",
+    "label": "Knows name",
+    "caption": "Knows name",
+    "visual_control": "knows-name"
+  },
+  {
+    "id": "wet-footprints",
+    "action": "hands",
+    "label": "Wet footprints",
+    "caption": "Wet footprints",
+    "visual_control": "wet-footprints"
+  },
+  {
+    "id": "echo-sentence",
+    "action": "question",
+    "label": "Echo sentence",
+    "caption": "Echo sentence",
+    "visual_control": "echo-sentence"
+  },
+  {
+    "id": "refuses-salt",
+    "action": "salt",
+    "label": "Refuses salt",
+    "caption": "Refuses salt",
+    "visual_control": "refuses-salt"
+  },
+  {
+    "id": "extra-knuckles",
+    "action": "hands",
+    "label": "Extra knuckles",
+    "caption": "Extra knuckles",
+    "visual_control": "extra-knuckles"
+  },
+  {
+    "id": "shadow-offset",
+    "action": "reflection",
+    "label": "Shadow offset",
+    "caption": "Shadow offset",
+    "visual_control": "shadow-offset"
+  },
+  {
+    "id": "usual-first-visit",
+    "action": "question",
+    "label": "Usual first visit",
+    "caption": "Usual first visit",
+    "visual_control": "usual-first-visit"
+  },
+  {
+    "id": "drawn-to-neon",
+    "action": "question",
+    "label": "Drawn to neon",
+    "caption": "Drawn to neon",
+    "visual_control": "drawn-to-neon"
+  },
+  {
+    "id": "sleeve-dust",
+    "action": "hands",
+    "label": "Sleeve dust",
+    "caption": "Sleeve dust",
+    "visual_control": "sleeve-dust"
+  },
+  {
+    "id": "never-blinks",
+    "action": "reflection",
+    "label": "Never blinks",
+    "caption": "Never blinks",
+    "visual_control": "never-blinks"
+  },
+  {
+    "id": "duplicate-regular",
+    "action": "reflection",
+    "label": "Duplicate regular",
+    "caption": "Duplicate regular",
+    "visual_control": "duplicate-regular"
+  },
+  {
+    "id": "mirrored-hair",
+    "action": "hands",
+    "label": "Mirrored hair",
+    "caption": "Mirrored hair",
+    "visual_control": "mirrored-hair"
+  },
+  {
+    "id": "wrong-hand",
+    "action": "question",
+    "label": "Wrong hand",
+    "caption": "Wrong hand",
+    "visual_control": "wrong-hand"
+  },
+  {
+    "id": "no-car",
+    "action": "reflection",
+    "label": "No car",
+    "caption": "No car",
+    "visual_control": "no-car"
+  },
+  {
+    "id": "cold-breath",
+    "action": "coffee",
+    "label": "Cold breath",
+    "caption": "Cold breath",
+    "visual_control": "cold-breath"
+  },
+  {
+    "id": "old-coins",
+    "action": "hands",
+    "label": "Old coins",
+    "caption": "Old coins",
+    "visual_control": "old-coins"
+  }
+]

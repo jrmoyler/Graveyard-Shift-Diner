@@ -1,0 +1,32 @@
+[
+  {
+    "id": "hands",
+    "seconds": 4,
+    "visible_label": "Hands & details",
+    "caption": "Hands, sleeves, footprints and hairline"
+  },
+  {
+    "id": "reflection",
+    "seconds": 4,
+    "visible_label": "Reflection & surroundings",
+    "caption": "Reflection, shadows, gaze and exterior window"
+  },
+  {
+    "id": "question",
+    "seconds": 4,
+    "visible_label": "Ask a question",
+    "caption": "Speech, order memory, attention and hand preference"
+  },
+  {
+    "id": "salt",
+    "seconds": 4,
+    "visible_label": "Offer salt",
+    "caption": "Acceptance or refusal"
+  },
+  {
+    "id": "coffee",
+    "seconds": 4,
+    "visible_label": "Check coffee",
+    "caption": "Steam, temperature and visible breath"
+  }
+]

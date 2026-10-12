@@ -1,0 +1,93 @@
+[
+  {
+    "id": "earl",
+    "story_steps": [
+      "Earl takes the booth nearest the door.",
+      "He mentions a bridge closure that lengthened his route.",
+      "He brings a clipping about the highway.",
+      "He asks whether Dot will still be here next week.",
+      "He leaves a penciled route around the closure."
+    ],
+    "false_tell": "refuses-salt",
+    "false_tell_source": "F033 canon",
+    "individuals": [
+      "earl"
+    ]
+  },
+  {
+    "id": "vonda",
+    "story_steps": [
+      "Vonda finishes a difficult hospital shift.",
+      "She explains the eye drops that keep her from blinking.",
+      "She orders food for a colleague working late.",
+      "She returns the borrowed menu she forgot in her bag.",
+      "She promises Dot an empty chair when the week ends."
+    ],
+    "false_tell": "never-blinks",
+    "false_tell_source": "F033 canon",
+    "individuals": [
+      "vonda"
+    ]
+  },
+  {
+    "id": "pruitt-twins",
+    "story_steps": [
+      "The twins arrive separately and choose nearby booths.",
+      "They joke about being mistaken for each other.",
+      "One twin orders for both while the other calls home.",
+      "They bring a school photograph showing their matching faces.",
+      "They leave together, arguing about whose turn it is to drive."
+    ],
+    "false_tell": "duplicate-regular",
+    "false_tell_source": "F033 canon",
+    "individuals": [
+      "pruitt-a",
+      "pruitt-b"
+    ]
+  },
+  {
+    "id": "coach-hale",
+    "story_steps": [
+      "Coach asks for the usual and takes the same chair.",
+      "He remembers the players who used to stop here.",
+      "He leaves a team schedule near the register.",
+      "He asks Dot to save a pie for a reunion.",
+      "He returns with a photograph of the old team."
+    ],
+    "false_tell": "usual-first-visit",
+    "false_tell_source": "F033 canon",
+    "individuals": [
+      "coach-hale"
+    ]
+  },
+  {
+    "id": "ines",
+    "story_steps": [
+      "Ines arrives after the late radio show.",
+      "She tells Dot about a caller who never speaks.",
+      "She shares the weather forecast for the highway.",
+      "She dedicates a quiet record to the night workers.",
+      "She leaves a note promising a mention of the diner."
+    ],
+    "false_tell": null,
+    "false_tell_source": "No fixed false tell prescribed; retain none",
+    "individuals": [
+      "ines"
+    ]
+  },
+  {
+    "id": "ricky",
+    "story_steps": [
+      "Ricky comes in wearing an oversized hoodie.",
+      "He admits he has missed the last bus.",
+      "He offers to sweep the doorway for a meal.",
+      "He finds a reliable ride home after the shift.",
+      "He thanks Dot and leaves the borrowed broom beside the door."
+    ],
+    "false_tell": null,
+    "false_tell_source": "No fixed false tell prescribed; retain none",
+    "individuals": [
+      "ricky"
+    ]
+  }
+]

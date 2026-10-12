@@ -1,0 +1,18 @@
+{
+  "pacifico": {
+    "sha": "27765d02ac13f241b1e207dbda7b2dd1b68280da",
+    "url": "https://github.com/google/fonts/blob/main/ofl/pacifico/Pacifico-Regular.ttf"
+  },
+  "plex": {
+    "sha": "0c9770d5183ba60dc4350d3e011b782a320761ae",
+    "url": "https://github.com/google/fonts/blob/main/ofl/ibmplexmono/IBMPlexMono-Regular.ttf"
+  },
+  "pacifico_license": {
+    "sha": "33864cc8de4dd3ea8f3daab1154be28577918bae",
+    "url": "https://github.com/google/fonts/blob/main/ofl/pacifico/OFL.txt"
+  },
+  "plex_license": {
+    "sha": "c35c4c618fab33da8695177b3a6cefe0810b7b28",
+    "url": "https://github.com/google/fonts/blob/main/ofl/ibmplexmono/OFL.txt"
+  }
+}
